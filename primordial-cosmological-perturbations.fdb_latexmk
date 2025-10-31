@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1761897163.25054 "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex" "primordial-cosmological-perturbations.pdf" "primordial-cosmological-perturbations" 1761897164.01204 0
-  "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex" 1761897162.20375 14232 b15990ace48bff23d348a57d72cdf006 ""
+["pdflatex"] 1761904679.85676 "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex" "primordial-cosmological-perturbations.pdf" "primordial-cosmological-perturbations" 1761904680.83884 0
+  "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex" 1761904679.64183 14237 ccedabaa6eb17fd33a3dff8f69bdbdd2 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvbc7t.tfm" 1136768653 2672 88159036c64e674fcd9515bc9c7052d4 ""
@@ -142,10 +142,10 @@
   "jheppub.sty" 1760799604.90981 11795 fb365c726d41b77ede44e032940a7c0b ""
   "pasted-images/comovinglight.png" 1761763297.2505 33289 17d045fd9e397d0a9186840796d8738b ""
   "pasted-images/primordial-cosmological-perturbations-00-21-20.png" 1761754883.35704 157663 8a2cca50a47e111a39627a10301f2421 ""
-  "primordial-cosmological-perturbations.aux" 1761897163.90028 4704 4ca568db7b2efc3acde8e831af115e59 "pdflatex"
-  "primordial-cosmological-perturbations.out" 1761897163.90109 2104 f2e0e5069167e9f584d6c3cf9dd39549 "pdflatex"
-  "primordial-cosmological-perturbations.tex" 1761897162.20375 14232 b15990ace48bff23d348a57d72cdf006 ""
-  "primordial-cosmological-perturbations.toc" 1761897163.9013 951 3ea6916829c5df1a083695f503cda699 "pdflatex"
+  "primordial-cosmological-perturbations.aux" 1761904680.71349 4704 4ca568db7b2efc3acde8e831af115e59 "pdflatex"
+  "primordial-cosmological-perturbations.out" 1761904680.71419 2104 f2e0e5069167e9f584d6c3cf9dd39549 "pdflatex"
+  "primordial-cosmological-perturbations.tex" 1761904679.64183 14237 ccedabaa6eb17fd33a3dff8f69bdbdd2 ""
+  "primordial-cosmological-perturbations.toc" 1761904680.7144 951 3ea6916829c5df1a083695f503cda699 "pdflatex"
   (generated)
   "primordial-cosmological-perturbations.aux"
   "primordial-cosmological-perturbations.log"
