@@ -26,7 +26,7 @@
 
 % more complex case: 4 authors, 3 institutions, 2 footnotes
 \author[1]{Allan L. Alinea,\note{Corresponding author.}} 
-\author[]{John Onesimus G. Ancheta}
+\author[*]{John Onesimus G. Ancheta \note[*]{The guy writing this document}}
 
 
 \affiliation[]{Astrophysics, Particle Physics, Nuclear Physics Research Cluster
@@ -50,7 +50,7 @@ This goes from reviews for the simplest special disformal transformal, passing t
 and then leading to investigation of the effect of the Invertible Higher-Derivative Disformal Transformation (TMM disformal transformation). 
 We examine the variations of scalar and tensor perturbations within the framework of the Horndeski theory. 
 While footprints of the change of these perturbations may be apparent at the leading order, we find that the stretching of the early universe may remove these marks of variance in the superhorizon limit.
-\note{what in the world}
+
 }
 
 
@@ -59,12 +59,22 @@ While footprints of the change of these perturbations may be apparent at the lea
 \maketitle
 \flushbottom
 
-\section{The purpose of this document} \label{sec:purpose}
-Although this document is currently formatted in the style of JHEP, it is not yet meant
+
+\section{Read Me First}
+\subsection*{Some Reminders}
+This document is a \textbf{work in progress}. Citations, figure sources, and the figures themselves are still being finalized
+ (I plan to create original versions of all figures in this document, at hand, some are already original). At present, several parts still lack proper attribution. All \textbf{necessary citations and credits will be included in the final version}. This version is uploaded to a GitHub repository for continuous backup and version control.
+
+Furthermore, I (the author, marked as (*)) am still developing my understanding of the topic at hand. The concepts, derivations, and exposition presented here have not yet been reviewed or verified by my supervisor (the co-author, marked as (1)). Errors are expected at this stage.
+
+This section will be removed once the document has been fully reviewed and approved by my supervisor.
+\subsection*{The Purpose of this Document}
+Although this document is currently formatted in the style of JHEP, it is not \textit{yet} meant
 to be a submission to JHEP or any journal thereof. This document, serves as two things. Firstly, it is where the second author
 fleshes out his thoughts regarding the topic, and thus the calculations and discussions may be lengthy and verbose.
 The second author wishes to grasp and understand the topics at hand. Secondly, it serves as a template and source material
 for a future formal document that may be submitted to JHEP or any other journal; it might even be a springboard for the author's undergraduate thesis. 
+
 
 
 \section{Overview and thoughts}
@@ -78,6 +88,14 @@ the surface of the fabric then slowly stretch the fabric. The heaviness of this 
 still leaving a dented surface. However, what if we increase the stretching so fast around the order of $e^{60}$? You'd find that
 the sphere does not have a time to "leave" a signifanct dent. Inflationary Cosmology introduces a particle called an \textit{inflaton}, that drove the inflation rate of the universe 
 exponentially, leaving us with a homogenous, isotropic, and euclidean space-time. 
+
+\begin{figure}[htbp]
+\centering
+\def\imgwidth{0.75\linewidth}
+\includegraphics[width=\imgwidth]{pasted-images/flatness1.png}
+\caption{flatness1}
+\label{fig:flatness1}
+\end{figure}
 
 Let us take a step-back again when the univese was rather young. The primordial universe was a soup of plasma and we often
 refer to this state as a collection of quantum fluctuations -- random variations in energy density. The Universe was simply too hot
@@ -152,7 +170,7 @@ to the Christofell Symbols as follows:
     \nabla_\mu V^\rho = \partial_\mu V^\rho + \Gamma^\rho_{\mu\sigma} V^\sigma.
     \label{covariant-derivative-christofell}
 \end{equation}
-
+equation
 
 
 \section{History and Properties of the Universe}
@@ -173,7 +191,7 @@ photons started to propagate freely up to the present time, we find these photon
 This is what we now call as the Cosmic Microwave Background (CMB). It is a strong evidence that, indeed, 
 the universe started from a hot and dense state, and has been expanding ever since. 
 
-
+\cite{alineaTransformationPrimordialCosmological2021, minamitsujiDisformalTransformationCosmological2014, dodelsonModernCosmology2021, 211111634InvertibleDisformal, alineaInflationaryUniversePower2017}
 
 
 
@@ -199,6 +217,10 @@ looking into the deviations from a flat, homogenous, and isotropic "background".
 we will consider the case where we have a flat universe, i.e., $K=0$ in \cref{flrw-metric}.
 
 
+\begin{equation}
+5+4+3+2
+\label{eq:trial}
+\end{equation}
 
 \subsection{An Example in using the FLRW Metric}
 
@@ -234,12 +256,15 @@ Hence the FLRW metric reduces to
 
 If we move the first term to the right and take the square root of both sides (taking note of the $\pm$)
 then continuing to solve the differential equation, we have
-
-\begin{align}
+\begin{equation}
+\begin{aligned}
      cdt &= \pm a(t) dr\\
      dr &= \pm \frac{c}{a(t)} dt\\
      \chi &= \pm c \int_{t_0}^{t_{em}} \frac{1}{a(t)} dt
-\end{align}
+\end{aligned}
+\label{eq:comovingdistance}
+\end{equation}
+
 
 \begin{figure}[H]
 \centering
@@ -260,9 +285,11 @@ It is now clear that in order to satifsy both conditions, we take the negative s
     \label{comoving-distance-integral}
 \end{equation}
 
+
+
 Does Eq. (\ref{comoving-distance-integral}) make sense? In my first encounter of this problem I was 
-quite confused how this measures the comoving distance. Isn't the comoving distance supposed to be 
-the "fixed" value prior to expansion at $t=t_{em}$? B
+quite confused how this measures the comoving distance. But once we realize that $a \in (0,1)$ then 
+we see that $\chi$ scales properly.   
 
 
 
@@ -351,22 +378,10 @@ haha
 % We however suggest to always provide author, title and journal data:
 % in short all the informations that clearly identify a document.
 
-\begin{thebibliography}{99}
+I'm just cleaning up my workflow here for the references.
 
-\bibitem{a}
-Author, \emph{Title}, \emph{J. Abbrev.} {\bf vol} (year) pg.
+\bibliographystyle{JHEP}
+\bibliography{cosmological-perturbations}
 
-\bibitem{b}
-Author, \emph{Title},
-arxiv:1234.5678.
-
-\bibitem{c}
-Author, \emph{Title},
-Publisher (year).
-
-
-
-
-
-\end{thebibliography}
 \end{document}
+

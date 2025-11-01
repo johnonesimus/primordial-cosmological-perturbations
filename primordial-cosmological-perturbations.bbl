@@ -1,0 +1,20 @@
+
+\providecommand{\href}[2]{#2}\begingroup\raggedright\begin{thebibliography}{1}
+
+\bibitem{alineaTransformationPrimordialCosmological2021}
+A.L.~Alinea and T.~Kubota, \emph{Transformation of {{Primordial Cosmological Perturbations Under}} the {{General Extended Disformal Transformation}}},  \href{https://arxiv.org/abs/2005.12747}{{\ttfamily 2005.12747}}.
+
+\bibitem{minamitsujiDisformalTransformationCosmological2014}
+M.~Minamitsuji, \emph{Disformal transformation of cosmological perturbations}, .
+
+\bibitem{dodelsonModernCosmology2021}
+S.~Dodelson and F.~Schmidt, \emph{Modern Cosmology}, Academic Press, an imprint of Elsevier, second edition~ed.
+
+\bibitem{211111634InvertibleDisformal}
+``[2111.11634] {{Invertible}} disformal transformations with higher derivatives.''
+
+\bibitem{alineaInflationaryUniversePower2017}
+A.L.~Alinea, ``Inflationary {{Universe}} : {{Power Spectra}} in {{Single-Field Inflation}} and {{Adiabatic Regularization}}.''
+\newblock 10.18910/61492.
+
+\end{thebibliography}\endgroup
