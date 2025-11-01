@@ -69,6 +69,49 @@ for a future formal document that may be submitted to JHEP or any other journal;
 
 \section{Overview and thoughts}
 
+The Big Bang singularity was an infinitely hot and dense object. For some inconclusive reason,
+the singularity expanded, or more accurately inflated. If we are to follow the initial mathematical model offered
+by the Big Bang Theory (BBT), it would fail to predict that universe that we see today -- homogenous, isotropic, and euclidean.
+This is where \textbf{Inflationary Cosmology} (IC) steps in. One of the problems of the initial BBT is the rate of inflation
+is too slow. For the sake of imagination, let us consider a deformable fabric. Suppose you place a really heavy sphere along
+the surface of the fabric then slowly stretch the fabric. The heaviness of this sphere would over power the stretching speed,
+still leaving a dented surface. However, what if we increase the stretching so fast around the order of $e^{60}$? You'd find that
+the sphere does not have a time to "leave" a signifanct dent. Inflationary Cosmology introduces a particle called an \textit{inflaton}, that drove the inflation rate of the universe 
+exponentially, leaving us with a homogenous, isotropic, and euclidean space-time. 
+
+Let us take a step-back again when the univese was rather young. The primordial universe was a soup of plasma and we often
+refer to this state as a collection of quantum fluctuations -- random variations in energy density. The Universe was simply too hot
+to accomodate the particles that we know today as presented in the Standard Model of Particle Physics. These quantum fluctuations are the "seedlings"
+of the present universe. It would rather be an interesting question to ask: "How did these quantum fluctuations influenced the inflaton field, and vice versa?"
+
+Let us say these quantum fluctuations perturb the inflation field, which we denote as $phi$, as follows:
+\begin{equation}
+    \phi = \bar{\phi} + \delta\phi
+\end{equation}
+Where, $\bar{\phi}$ is the unperturbed portion of the field, while $\delta\phi$, is our object of interest. Now the thing is,
+the inflaton is still a theoretical framework, and it is rather of astronomical difficulty to probe this field experimentally.
+We then resort to our bestfriend that is mathematics. 
+Some issues arise. Firstly, in our current General Relativity textbooks, we only know about what we call as Conformal Transformation.
+Handwaving our way around, it is simply a symmetric transformation in space, and it is quite the gymnastics to think about this 
+formalism where there is constant changes in space due to perturbations. We owe the great Bekenstein with this one, as he developed a mathematical
+tool which we now call as the Disformal Transformation. This transformation of the metric under takes the form:
+\begin{equation}
+    A ( \phi ) g _ { \mu \nu } + \ B ( \phi ) \phi _ { ; \mu } \phi _ { ; \nu }
+\end{equation}
+
+Notice that we go straight to the metric! The metric measures the changes in the geometry in our spacetime, and it allows us to solve
+the LHS Einstein Field Equations (EFE) given by 
+\begin{equation}
+    R _ { \mu \nu } - \frac { 1 } { 2 } R \; g _ { \mu \nu } + \Lambda \; g _ { \mu \nu } = \frac { 8 \, \pi \, G } { c ^ { 4 } } \, T _ { \mu \nu }
+\end{equation}
+
+Knowing how spacetime behaves also give us some clue regarding the nature of the matter that influenced the geometry. We'd find to encounter 
+another pressing issue: $\delta \phi$ is not gauge invariant. In other words, it is not physically measurable. We'd first want to 
+package it mathematically into its gauge invariant variant (get-it, get-it?); we then slot it in our FLRW metric (a metric that aligns
+with the universe we see today). Once we slot that in the metric, we then apply our chosen Disformal Transformation, then solve the Einstein Field Equations. 
+
+
+
 
 \section{Mathematical Preliminaries} 
 
@@ -136,7 +179,9 @@ the universe started from a hot and dense state, and has been expanding ever sin
 
 
 
-\section{The Expanding and Flat Universe}
+\section{How a Flat, Homogenous, and Isotropic Universe Evolves: The FLRW Metric}
+
+
 The FLRW metric is given by 
 \begin{equation}
     ds^2 = -dt^2 + a^2(t) \left[ \frac{dr^2}{1-Kr^2} + r^2 (d\theta^2 + \sin^2 \theta d\phi^2) \right],
