@@ -6,6 +6,7 @@
                      % see the JHEP-author-manual
 \usepackage{cleveref}
 \usepackage{float}
+\usepackage{enumitem}
 \usepackage{booktabs} % For professional quality tables (\toprule, \midrule, \bottomrule)
 \usepackage{array}    % For table column formatting (p{} columns)
 \usepackage{caption}  % For table captions
@@ -142,27 +143,19 @@ package it mathematically into its gauge invariant variant (get-it, get-it?); we
 with the universe we see today). Once we slot that in the metric, we then apply our chosen Disformal Transformation, then solve the Einstein Field Equations. 
 
 \subsection{Overture}
-\begin{enumerate}
-    \itemsep0em
-    \item We describe the homogenous and isotropic universe that we see today, encapsulated by the FLRW metric.
-    This is our "stage" where things happen.
-    \item We use the Inflationary Model in cosmology to hypothesize the existence of a scalar field inflaton, denoted $/phi$ 
-    that should coincide with the universe that we see today. 
-    \item We take note of the fact that during the early universe, we had quantum fluctuations that 
-    both the background metric and the inflaton field. 
-    \item To analyze better this perturbations, we use the scalar-vector-tensor decomposition. We only take 
-    the scalar and tensor components since they are the only ones relevant in the study. 
-    We need to keep track of the scalar perturbations, encapsulated in $\zeta$; 
-    note that this already takes into account the scalar perturbations of from the quantum fluctuations, 
-    and it should clearly take into account the perturbations from the scalar field. Finally, we take note that 
-    the we must also keep an eye on the tensor perturbations, denoted as $\gamma$ -- this is related to the 
-    gravitational waves brought forth by the quantum fluctuations.
-    \item We slot this into our background metric, essentially "perturbing" our metric. 
-    \item We take the perturbed metric $g_{\mu \nu}$ then apply the TMM disformal transformation. 
-    \item This gives me a new metric denoted as $\hat{g_{\mu \nu}}$. 
-    \item Essentially we want to at the perturbations from two different perspectives or "frames". 
-    First, we look at what the actual "background" sees($g_{\mu \nu}$) then compare it what the 
-    TMM frame sees ($\hat{g_{\mu \nu}}$). Are these perturbations invariant or not when looked at from different perspectives?
+\begin{enumerate}[itemsep=0pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+    \item We describe the \textbf{homogeneous and isotropic} universe that we see today, encapsulated by the FLRW metric. This is our "stage" where the physics takes place.
+    \item We use the Inflationary Model, which hypothesizes the existence of a scalar field (the inflaton, denoted $\phi$) that drives the initial expansion and leads to the universe we observe.
+    \item We note that during the early universe, \textbf{quantum fluctuations} perturbed both the background metric and the inflaton field.
+    \item To better analyze these perturbations, we use the scalar-vector-tensor decomposition. We take only the scalar and tensor components, as they are the relevant ones for this study.
+    \begin{itemize}[itemsep=0pt, topsep=0pt, partopsep=0pt, parsep=0pt]
+        \item We must keep track of the \textbf{scalar perturbation, encapsulated in $\zeta$}. This single, gauge-invariant variable packages together the scalar fluctuations from both the quantum fluctuations and the inflaton field.
+        \item We must also keep an eye on the \textbf{tensor perturbation, denoted as $\gamma_{ij}$}, which represents primordial gravitational waves.
+    \end{itemize}
+    \item We slot these perturbations into our background metric, which gives us the full, physically perturbed metric, $g_{\mu \nu}$.
+    \item We take this perturbed metric $g_{\mu \nu}$ and then apply the \textbf{TMM disformal transformation}.
+    \item This gives us a new metric, denoted as $\hat{g}_{\mu \nu}$.
+    \item Essentially, we want to look at the perturbations from two different perspectives, or "frames." First, we look at them in the original frame ($g_{\mu \nu}$) and then compare this to what the TMM frame sees ($\hat{g}_{\mu \nu}$). The central question is: \textbf{are these perturbations invariant} when viewed from these different perspectives?
 \end{enumerate}
 
 
