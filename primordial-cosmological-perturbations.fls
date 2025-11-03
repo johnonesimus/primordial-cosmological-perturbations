@@ -213,6 +213,8 @@ INPUT ./pasted-images/flatness1.png
 INPUT ./pasted-images/flatness1.png
 INPUT ./pasted-images/flatness1.png
 INPUT ./pasted-images/flatness1.png
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm
+INPUT /usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 INPUT ./pasted-images/primordial-cosmological-perturbations-00-21-20.png
 INPUT ./pasted-images/primordial-cosmological-perturbations-00-21-20.png
 INPUT ./pasted-images/primordial-cosmological-perturbations-00-21-20.png
@@ -223,11 +225,6 @@ INPUT ./pasted-images/comovinglight.png
 INPUT ./pasted-images/comovinglight.png
 INPUT ./pasted-images/comovinglight.png
 INPUT ./pasted-images/comovinglight.png
-INPUT ./pasted-images/primordial-cosmological-perturbations-18-05-57.png
-INPUT ./pasted-images/primordial-cosmological-perturbations-18-05-57.png
-INPUT ./pasted-images/primordial-cosmological-perturbations-18-05-57.png
-INPUT ./pasted-images/primordial-cosmological-perturbations-18-05-57.png
-INPUT ./pasted-images/primordial-cosmological-perturbations-18-05-57.png
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm
 INPUT /usr/local/texlive/2025/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm

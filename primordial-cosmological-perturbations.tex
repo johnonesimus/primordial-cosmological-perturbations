@@ -111,7 +111,17 @@ Let us say these quantum fluctuations perturb the inflation field, which we deno
 \end{equation}
 Where, $\bar{\phi}$ is the unperturbed portion of the field, while $\delta\phi$, is our object of interest. Now the thing is,
 the inflaton is still a theoretical framework, and it is rather of astronomical difficulty to probe this field experimentally.
-We then resort to our bestfriend that is mathematics. 
+We then resort to our bestfriend that is mathematics. Now, how do we determine the precise mathematical properties of these 
+perturbations? There is no consensus, \textit{yet} under what mathematical framework should we probe these perturbations;
+however, some frameworks are better than other. Take for example the scalar-tensor theories, which may be represented 
+in different "frames" that are mathematically related by metric transformations such as:
+
+\begin{itemize}
+    \item \textbf{Conformal transformation.} A transformation that uniformly rescales the metric.
+    \item \textbf{Disformal transformation.} Describes a more complex and anisotropic stretching of the metric.
+\end{itemize}
+
+
 Some issues arise. Firstly, in our current General Relativity textbooks, we only know about what we call as Conformal Transformation.
 Handwaving our way around, it is simply a symmetric transformation in space, and it is quite the gymnastics to think about this 
 formalism where there is constant changes in space due to perturbations. We owe the great Bekenstein with this one, as he developed a mathematical
@@ -131,6 +141,29 @@ another pressing issue: $\delta \phi$ is not gauge invariant. In other words, it
 package it mathematically into its gauge invariant variant (get-it, get-it?); we then slot it in our FLRW metric (a metric that aligns
 with the universe we see today). Once we slot that in the metric, we then apply our chosen Disformal Transformation, then solve the Einstein Field Equations. 
 
+\subsection{Overture}
+\begin{enumerate}
+    \itemsep0em
+    \item We describe the homogenous and isotropic universe that we see today, encapsulated by the FLRW metric.
+    This is our "stage" where things happen.
+    \item We use the Inflationary Model in cosmology to hypothesize the existence of a scalar field inflaton, denoted $/phi$ 
+    that should coincide with the universe that we see today. 
+    \item We take note of the fact that during the early universe, we had quantum fluctuations that 
+    both the background metric and the inflaton field. 
+    \item To analyze better this perturbations, we use the scalar-vector-tensor decomposition. We only take 
+    the scalar and tensor components since they are the only ones relevant in the study. 
+    We need to keep track of the scalar perturbations, encapsulated in $\zeta$; 
+    note that this already takes into account the scalar perturbations of from the quantum fluctuations, 
+    and it should clearly take into account the perturbations from the scalar field. Finally, we take note that 
+    the we must also keep an eye on the tensor perturbations, denoted as $\gamma$ -- this is related to the 
+    gravitational waves brought forth by the quantum fluctuations.
+    \item We slot this into our background metric, essentially "perturbing" our metric. 
+    \item We take the perturbed metric $g_{\mu \nu}$ then apply the TMM disformal transformation. 
+    \item This gives me a new metric denoted as $\hat{g_{\mu \nu}}$. 
+    \item Essentially we want to at the perturbations from two different perspectives or "frames". 
+    First, we look at what the actual "background" sees($g_{\mu \nu}$) then compare it what the 
+    TMM frame sees ($\hat{g_{\mu \nu}}$). Are these perturbations invariant or not when looked at from different perspectives?
+\end{enumerate}
 
 
 
@@ -139,11 +172,11 @@ with the universe we see today). Once we slot that in the metric, we then apply 
 
 \subsection{The Riemann Curvature Tensor and its Contractions}
 \label{subsec:RCT}
- A \textbf{manifold} is a topological space that is locally Euclidian. On the other hand a \textbf{Riemannian manifold} is a type of 
- manifold where mesaurement of distance and angle is possible. This is made possible by the metric. 
-
- An aside. Gauss figured out that any point on a 2D surface can be summarized by a single number which
- we denote as $K$ and is called as the \textbf{Gaussian curvature}. This is the product of the two principal curvatures
+ A \textbf{manifold} is a topological space that is locally Euclidian. On the other hand a \textbf{Riemmanian manifold} is a type of
+ manifold where measurement of distance and angle is possible.
+ 
+ Gauss figured out that any point on a 2D surface can be summarized by a single number which we denote as $K$ and
+  is called as the \textbf{Gaussian curvature}. This is the product of the two principal curvatures
  at a particular point. Simply put, the principal curvatures are rough approximations of the 2D surface.
 \begin{figure}[H]
 \centering
@@ -276,15 +309,6 @@ then continuing to solve the differential equation, we have
 \caption{A light signal emitted at cosmic time $t_{\rm em}$ from radial coordinate $r_{\rm em}$ and received at $t_0$.}
 \label{fig:comovinglight}
 \end{figure}
-
-\begin{figure}[htbp]
-\centering
-\def\imgwidth{0.65\linewidth}
-\includegraphics[width=\imgwidth]{pasted-images/primordial-cosmological-perturbations-18-05-57.png}
-\caption{primordial-cosmological-perturbations-18-05-57}
-\label{fig:primordial-cosmological-perturbations-18-05-57}
-\end{figure}
-
 
 If we refer to Fig. \ref{fig:comovinglight}, since as far as we know, time moves in one direction
 then $dt>0$. On the other hand, notice that since we set $r_0=0$ as the obesrver's position,
