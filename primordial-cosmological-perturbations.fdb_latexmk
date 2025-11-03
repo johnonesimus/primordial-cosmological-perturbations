@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex primordial-cosmological-perturbations"] 1762111944.28807 "primordial-cosmological-perturbations.aux" "primordial-cosmological-perturbations.bbl" "primordial-cosmological-perturbations" 1762112022.05902 0
+["bibtex primordial-cosmological-perturbations"] 1762164412.84874 "primordial-cosmological-perturbations.aux" "primordial-cosmological-perturbations.bbl" "primordial-cosmological-perturbations" 1762164414.24624 0
   "./JHEP.bst" 1762008955.99985 20428 4525092f01ae6c589c5ebcc5d39fe653 ""
   "./cosmological-perturbations.bib" 1762009185.43778 5181 126c790d1c141d841409d9285c6ff791 ""
-  "primordial-cosmological-perturbations.aux" 1762112021.72777 5879 1ca66ffb547e80deddfe4c0761c451ed "pdflatex"
+  "primordial-cosmological-perturbations.aux" 1762164413.95962 6286 88c928721929031c24fd024671733af0 "pdflatex"
   (generated)
   "primordial-cosmological-perturbations.bbl"
   "primordial-cosmological-perturbations.blg"
   (rewritten before read)
-["pdflatex"] 1762112020.61697 "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex" "primordial-cosmological-perturbations.pdf" "primordial-cosmological-perturbations" 1762112022.0592 0
-  "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex" 1762112020.40458 18961 eb5c7120dd378710fd23320125a4f848 ""
+["pdflatex"] 1762164412.94356 "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex" "primordial-cosmological-perturbations.pdf" "primordial-cosmological-perturbations" 1762164414.24638 0
+  "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex" 1762164411.14573 19262 5fa267a61e0f497d22ca327e708cba24 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvbc7t.tfm" 1136768653 2672 88159036c64e674fcd9515bc9c7052d4 ""
@@ -153,11 +153,12 @@
   "pasted-images/comovinglight.png" 1761763297.2505 33289 17d045fd9e397d0a9186840796d8738b ""
   "pasted-images/flatness1.png" 1762004252.82624 216008 afd0e24b67178ebf279d1e94cc2f2069 ""
   "pasted-images/primordial-cosmological-perturbations-00-21-20.png" 1761754883.35704 157663 8a2cca50a47e111a39627a10301f2421 ""
-  "primordial-cosmological-perturbations.aux" 1762112021.72777 5879 1ca66ffb547e80deddfe4c0761c451ed "pdflatex"
-  "primordial-cosmological-perturbations.bbl" 1762111944.4337 1004 b4900cfb7304089ad12865f641ba7ff2 "bibtex primordial-cosmological-perturbations"
-  "primordial-cosmological-perturbations.out" 1762112021.72853 2241 4bec8fadd9e96e89c6aa79548bc0e99e "pdflatex"
-  "primordial-cosmological-perturbations.tex" 1762112020.40458 18961 eb5c7120dd378710fd23320125a4f848 ""
-  "primordial-cosmological-perturbations.toc" 1762112021.72872 976 3caeadd764d9e04c5ef62faf2d5feafd "pdflatex"
+  "pasted-images/primordial-cosmological-perturbations-18-05-57.png" 1762164358.64268 140328 a6169fd44df4e766a0011f4960501ae8 ""
+  "primordial-cosmological-perturbations.aux" 1762164413.95962 6286 88c928721929031c24fd024671733af0 "pdflatex"
+  "primordial-cosmological-perturbations.bbl" 1762164412.94116 1004 b4900cfb7304089ad12865f641ba7ff2 "bibtex primordial-cosmological-perturbations"
+  "primordial-cosmological-perturbations.out" 1762164413.96047 2241 4bec8fadd9e96e89c6aa79548bc0e99e "pdflatex"
+  "primordial-cosmological-perturbations.tex" 1762164411.14573 19262 5fa267a61e0f497d22ca327e708cba24 ""
+  "primordial-cosmological-perturbations.toc" 1762164413.96069 977 fecc73be7bf22320a81c3ded4168d7be "pdflatex"
   (generated)
   "primordial-cosmological-perturbations.aux"
   "primordial-cosmological-perturbations.log"
