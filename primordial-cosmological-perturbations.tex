@@ -121,7 +121,7 @@ in different "frames" that are mathematically related by metric transformations 
     \item \textbf{Conformal transformation.} A transformation that uniformly rescales the metric.
     \item \textbf{Disformal transformation.} Describes a more complex and anisotropic stretching of the metric.
 \end{itemize}
-
+2
 
 Some issues arise. Firstly, in our current General Relativity textbooks, we only know about what we call as Conformal Transformation.
 Handwaving our way around, it is simply a symmetric transformation in space, and it is quite the gymnastics to think about this 
@@ -201,6 +201,13 @@ to the Christofell Symbols as follows:
 \end{equation}
 equation
 
+\begin{figure}[htbp]
+\centering
+\def\imgwidth{0.65\linewidth}
+\includegraphics[width=\imgwidth]{pasted-images/hello.png}
+\caption{hello}
+\label{fig:hello}
+\end{figure}
 
 \section{History and Properties of the Universe}
 The Universe as we see it today is \textbf{homogenous} and \textbf{isotropic}. Homogeneity talks about
@@ -376,6 +383,28 @@ The most general quadratic transformation in first derivatives. All coefficient 
 \textbf{Note:} $X = -\frac{1}{2}g^{\alpha\beta}\phi_{;\alpha}\phi_{;\beta}$ denotes the kinetic term. The arguments $(\dots)$ in the last two rows are shorthand for $(\phi, X, Y, Z)$, representing dependence on the scalar field and its invariants.
 \end{table}
 
+\section{Geodesics, Cosmological Redshift, Horizons, and Comoving Coordinates}
+How do the galaxies in the universe spread out overtime as the universe 
+changes time according to the scale factor $a(t)$  
+\subsection{Geodesics}
+The Geodesic equation as given by Eq. (\ref{eq:geodesic}) 
+below describes the path a free particle would take if there are no
+\textit{forces acting} upon it. It is only affected by the curavture of spacetime. 
+
+
+\begin{equation}
+\frac { d ^ { 2 } x ^ { \sigma } } { d \lambda ^ { 2 } } + \, \Gamma _ { \mu \nu } ^ { \sigma } \, \frac { d x ^ { \mu } } { d \lambda } \frac { d x ^ { \nu } } { d \lambda } = \, 0
+\label{eq:geodesic}
+\end{equation}
+
+Why bother with the geodesic? Since for the most part, the universe is an empty space of vacuum, 
+if we find the geodesic describing the system, we can potentially track its evolution overtime. \textcolor{red}{Would it be 
+possible to treat the \textit{inflaton} as a free particle, then track its evolution?} 
+
+Notice the Connection Coefficients given in Eq. (\ref{eq:geodesic}). Upon deriving the Connetion Coefficients (CC) 
+for the FLRW metric, we recover $13$ non-vanishing and unique CC. To save us from going through this one-by-one, it might be smart
+to take an initial ansatz.
+ 
 
 \appendix
 \section{Appendix} 
