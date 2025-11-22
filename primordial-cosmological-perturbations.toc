@@ -6,8 +6,8 @@
 \contentsline {section}{\numberline {4}History and Properties of the Universe}{5}{section.4}%
 \contentsline {subsection}{\numberline {4.1}What the Cosmic Microwave Background Tells us}{5}{subsection.4.1}%
 \contentsline {section}{\numberline {5}How a Flat, Homogenous, and Isotropic Universe Evolves: The FLRW Metric}{6}{section.5}%
-\contentsline {subsection}{\numberline {5.1}An Example in using the FLRW Metric}{7}{subsection.5.1}%
-\contentsline {section}{\numberline {6}Disformal Transformation}{8}{section.6}%
+\contentsline {subsection}{\numberline {5.1}An Example in using the FLRW Metric}{6}{subsection.5.1}%
+\contentsline {section}{\numberline {6}Disformal Transformation}{7}{section.6}%
 \contentsline {section}{\numberline {7}Geodesics, Cosmological Redshift, Horizons, and Comoving Coordinates}{9}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Geodesics}{10}{subsection.7.1}%
 \contentsline {section}{\numberline {A}Appendix}{10}{appendix.A}%

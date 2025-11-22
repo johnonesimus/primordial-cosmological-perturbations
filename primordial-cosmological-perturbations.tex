@@ -12,6 +12,7 @@
 \usepackage{caption}  % For table captions
 \usepackage{pdflscape} % *** ADDED THIS LINE TO FIX THE 'landscape' ENVIRONMENT ERROR ***
 \usepackage{graphicx}
+\usepackage{mathtools}
 \usepackage{tabularx}
 \usepackage[T1]{fontenc} % if needed
 
@@ -158,7 +159,13 @@ with the universe we see today). Once we slot that in the metric, we then apply 
     \item Essentially, we want to look at the perturbations from two different perspectives, or "frames." First, we look at them in the original frame ($g_{\mu \nu}$) and then compare this to what the TMM frame sees ($\hat{g}_{\mu \nu}$). The central question is: \textbf{are these perturbations invariant} when viewed from these different perspectives?
 \end{enumerate}
 
-
+\begin{figure}[htbp]
+\centering
+\def\imgwidth{0.65\linewidth}
+\includegraphics[width=\imgwidth]{pasted-images/aion.png}
+\caption{aion}
+\label{fig:aion}
+\end{figure}
 
 \section{Mathematical Preliminaries} 
 
@@ -201,13 +208,6 @@ to the Christofell Symbols as follows:
 \end{equation}
 equation
 
-\begin{figure}[htbp]
-\centering
-\def\imgwidth{0.65\linewidth}
-\includegraphics[width=\imgwidth]{pasted-images/hello.png}
-\caption{hello}
-\label{fig:hello}
-\end{figure}
 
 \section{History and Properties of the Universe}
 The Universe as we see it today is \textbf{homogenous} and \textbf{isotropic}. Homogeneity talks about
@@ -331,6 +331,66 @@ we see that $\chi$ scales properly.
 
 
 \section{Disformal Transformation}
+
+
+The SVT decomposed perturbed metric with scalar and tensor perturbations is given by
+\begin{equation}
+    d s ^ { 2 } = - ( 1 + 2 \xi ) d t ^ { 2 } + 2 \psi _ { ; i } d t d x ^ { i } + a ^ { 2 } ( t ) \left[ ( 1 + 2 \zeta ) \delta _ { i j } + \gamma _ { i j } + 2 E _ { ; i j } \right] d x ^ { i } d x ^ { j }
+\end{equation}
+
+This may be written in ADM formalism as 
+
+\begin{equation}
+d s ^ { 2 } = ( - N ^ { 2 } + h _ { i j } N ^ { i } N ^ { j } ) d t ^ { 2 } + 2 h _ { i j } N ^ { j } d x ^ { i } d t + h _ { i j } d x ^ { i } d x ^ { j }
+\end{equation}
+
+The TMM states that
+\begin{equation}
+    \hat { g } _ { \mu \nu } = A g _ { \mu \nu } + B \phi _ { ; \mu } \phi _ { ; \nu } + C ( \phi _ { ; \mu } X _ { ; \nu } + X _ { ; \mu } \phi _ { ; \nu } ) + D X _ { ; \mu } X _ { ; \nu }
+\end{equation}
+
+Where $A,B,C,D$ are dependent on $\phi, X, Y, Z$. Following \cite{minamitsujiDisformalTransformationCosmological2014} we may define 
+
+
+
+
+The scalar field perturbation is defined to be 
+\begin{equation}
+    \zeta ( t , \mathbf { x } ) \equiv - \Psi ( t , \mathbf { x } ) - \frac { H } { \dot { \bar { \rho } } ( t ) } \delta \rho ( t , \mathbf { x } ) ,
+\end{equation}
+
+
+
+The lapse function 
+
+\begin{equation}
+    N \equiv \frac { 1 } { \sqrt { - g ^ { ' \mu \nu } \nabla _ { a } t \nabla _ { b } t } } = \frac { 1 } { - g ^ { 0 0 } }
+\label{eq:lapse}
+\end{equation}
+
+
+Referring to Ref. \cite{minamitsujiDisformalTransformationCosmological2014}, we may define the following terms as 
+\begin{equation}
+\begin{aligned}
+X &\coloneq -\frac{1}{2}g{\mu \nu} \nabla_{\mu}\phi \nabla_{\nu}\phi\\
+Y &\coloneq \nabla ^ { \mu } \phi \nabla _ { \mu } X\\ 
+Z &\coloneq \nabla ^ { \mu } X \nabla _ { \mu } X
+\end{aligned}
+\label{eq:coefficients1}
+\end{equation}
+
+Taking note of Eq. \ref{eq:coefficients1}, and using unitary gauge where $\phi = \phi(t)$, then we may write these
+as 
+
+\begin{equation}
+\begin{aligned}
+X &= \frac{\dot{\phi}^2}{2N^2}\\
+Y &= -\frac{\dot{\phi}\dot{X}}{N^2}\\ 
+Z &= - \frac{\dot{X}^2}{N^2}
+\end{aligned}
+\label{eq:coefficients2}
+\end{equation}
+
 \newpage
 \begin{table}[H]
 \centering
