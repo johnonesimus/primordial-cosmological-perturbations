@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1766514226.31813 "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/TMM.tex" "TMM.pdf" "TMM" 1766514227.03079 0
-  "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/TMM.tex" 1766514226.18531 13760 2ea0af796fadf6bbfed56fd2e46ffab2 ""
+["pdflatex"] 1766515194.97928 "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/TMM.tex" "TMM.pdf" "TMM" 1766515195.70936 0
+  "/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/TMM.tex" 1766515194.84449 13813 e754c09431df934c046ac6f85229c06f ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/tfm/adobe/helvetic/phvbc7t.tfm" 1136768653 2672 88159036c64e674fcd9515bc9c7052d4 ""
@@ -120,11 +120,11 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1758871655 5528139 daf1353d2d3d7fed9df2ebbf1b26218e ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1758872199 3621560 37d43a2f143849576511431e0199efdf ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "TMM.aux" 1766514226.96457 4349 61840bd36d7335befb275d47136e1f11 "pdflatex"
-  "TMM.out" 1766514226.96521 1519 51775c02c476016f42b525749c1d8a76 "pdflatex"
-  "TMM.tex" 1766514226.18531 13760 2ea0af796fadf6bbfed56fd2e46ffab2 ""
+  "TMM.aux" 1766515195.64312 4349 61840bd36d7335befb275d47136e1f11 "pdflatex"
+  "TMM.out" 1766515195.64374 1519 51775c02c476016f42b525749c1d8a76 "pdflatex"
+  "TMM.tex" 1766515194.84449 13813 e754c09431df934c046ac6f85229c06f ""
   "jheppub.sty" 1760799604.90981 11795 fb365c726d41b77ede44e032940a7c0b ""
-  "primordial-cosmological-perturbations.tex" 1766514222.91742 30845 227e09dceeb026596ff3e346715adcda ""
+  "primordial-cosmological-perturbations.tex" 1766514329.51529 30845 227e09dceeb026596ff3e346715adcda ""
   (generated)
   "TMM.aux"
   "TMM.log"

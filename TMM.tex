@@ -68,6 +68,8 @@ Since this is a scalar field the covariant derivative reduces to partial derivat
 \label{eq:phi_derivs}
 \end{equation}
 
+where we used $\bar{\phi}_{,i} = 0$ by background homogeneity.  
+
 Likewise for $X$ we have
 \begin{equation}
 X(x,\mathbf{x}) = \bar{X} + \delta X
@@ -99,7 +101,7 @@ X
 &= \frac{1}{2}\dot{\bar{\phi}}^{2}+\dot{\bar{\phi}}\,\delta\dot{\phi}-\varphi\,\dot{\bar{\phi}}^{2},
 \end{aligned}
 \end{equation}
-where $g^{00}$ comes from the perturbed metric, and we have dropped higher-order perturbations (e.g.\ $(\delta\dot{\phi})^{2}$).
+where $g^{00} =-(1-2\varphi)$ follows from inverting then expanding $g_{00}$ at linear order.  We have also dropped higher-order perturbations (e.g.\ $(\delta\dot{\phi})^{2}$).
 
 \section{Linear Expansion of the Transformed Metric}
 
@@ -136,9 +138,8 @@ Using \cref{eq:ABCDsplit,eq:phi_derivs} we have
 
 \begin{equation}
 \begin{aligned}
-B \phi_{;0}^2 &= B \dot{\phi}^2 \\ 
-              &=(\bar{B} + \delta B)(\dot{\bar{\phi}} + \delta\dot{\phi})^2 \\ 
-              &=(\bar{B} + \delta B)(\dot{\bar{\phi}})(\dot{\bar{\phi}}^2 + 2\dot{\bar{\phi}}\delta\dot{\phi} + \cancelto{}{\delta \dot{\phi}^2}) \\ 
+B \phi_{;0}^2 &=(\bar{B} + \delta B)(\dot{\bar{\phi}} + \delta\dot{\phi})^2 \\ 
+              &=(\bar{B} + \delta B)(\dot{\bar{\phi}}^2 + 2\dot{\bar{\phi}}\delta\dot{\phi} + \cancelto{}{\delta \dot{\phi}^2}) \\ 
               &\approx \bar{B}\dot{\bar{\phi}}^2 + 2\bar{B}\dot{\bar{\phi}}\delta\dot{\phi} + \delta B \dot{\bar{\phi}}^2 + \cancelto{}{2 \dot{\phi} \delta B} \delta \dot{\phi} \\ 
               &\approx \bar{B}\dot{\bar{\phi}}^2 + 2\bar{B}\dot{\bar{\phi}}\delta\dot{\phi} + \delta B \dot{\bar{\phi}}^2 
 \end{aligned}
@@ -178,7 +179,7 @@ Putting \cref{eq:Ag_00,eq:Bphi,eq:Cphix,eq:DXsqr}, therefore $\hat{g_{00}}$ in l
 \begin{aligned}
 \hat{g}_{00} \approx &-\bar{A} -\delta A - 2 \bar{A}\varphi \\
 &+ \bar{B}\dot{\bar{\phi}}^2 + 2\bar{B}\dot{\bar{\phi}}\delta\dot{\phi} + \delta B \dot{\bar{\phi}}^2 \\ 
-&+ \bar{C}\dot{\bar{\phi}}\dot{\bar{X}} + \bar{C}\dot{\bar{\phi}} \delta\dot{X} + \bar{C}\delta\dot{\phi} \dot{\bar{X}} + \delta C\dot{\bar{\phi}}\dot{\bar{X}} \\ 
+&+ 2(\bar{C}\dot{\bar{\phi}}\dot{\bar{X}} + \bar{C}\dot{\bar{\phi}} \delta\dot{X} + \bar{C}\delta\dot{\phi} \dot{\bar{X}} + \delta C\dot{\bar{\phi}}\dot{\bar{X}}) \\ 
 &+ \bar{D}\dot{\bar{X}}^2 + 2\bar{D}\dot{\bar{X}}\delta\dot{X} + \delta D\dot{\bar{X}}^2 
 \end{aligned}}
 \label{eq:ghat00}
@@ -186,8 +187,7 @@ Putting \cref{eq:Ag_00,eq:Bphi,eq:Cphix,eq:DXsqr}, therefore $\hat{g_{00}}$ in l
 
 
 \section{For the $dt dx^i$  terms}
-We wish to expand $Ag_{0i} + B \phi_{;0}\phi_{;i}  + C(\phi_{;0}X_{;i}+X_{;0}\phi_{;i} )  +DX_{;0}X_{;i}$. We notice that 
-$\phi(t)_{;i}$ vanishes. 
+We wish to expand $Ag_{0i} + B \phi_{;0}\phi_{;i}  + C(\phi_{;0}X_{;i}+X_{;0}\phi_{;i} )  +DX_{;0}X_{;i}$. 
 
 \subsubsection*{For $Ag_{0i}$ }
 \begin{equation}
@@ -299,8 +299,18 @@ and collecting our results given by \cref{eq:ghat00,eq:ghat0i,eq:ghatij} we fina
 \begin{aligned}
 d\hat s^{2}\simeq\;&
 \Big[
--\bar{A} -\delta A - 2 \bar{A}\varphi + \bar{B}\dot{\bar{\phi}}^2 + 2\bar{B}\dot{\bar{\phi}}\delta\dot{\phi} + \delta B \dot{\bar{\phi}}^2 \\ 
-&+ \bar{C}\dot{\bar{\phi}}\dot{\bar{X}} + \bar{C}\dot{\bar{\phi}} \delta\dot{X} + \bar{C}\delta\dot{\phi} \dot{\bar{X}} + \delta C\dot{\bar{\phi}}\dot{\bar{X}} + \bar{D}\dot{\bar{X}}^2 + 2\bar{D}\dot{\bar{X}}\delta\dot{X} + \delta D\dot{\bar{X}}^2 ]\,dt^{2}
+-\bar{A}-\delta A-2\bar{A}\varphi
++\bar{B}\dot{\bar{\phi}}^{2}+2\bar{B}\dot{\bar{\phi}}\,\delta\dot{\phi}+\delta B\,\dot{\bar{\phi}}^{2}
+\\
+&\quad
++2\Big(\bar{C}\dot{\bar{\phi}}\dot{\bar{X}}
++\bar{C}\dot{\bar{\phi}}\,\delta\dot{X}
++\bar{C}\delta\dot{\phi}\,\dot{\bar{X}}
++\delta C\,\dot{\bar{\phi}}\dot{\bar{X}}\Big)
+\\
+&\quad
++\bar{D}\dot{\bar{X}}^{2}+2\bar{D}\dot{\bar{X}}\,\delta\dot{X}+\delta D\,\dot{\bar{X}}^{2}
+\Big]\,dt^{2}
 \\
 &\;+\;2\Big[
 a\bar{A}(\alpha_{,i}+\beta_{i})
