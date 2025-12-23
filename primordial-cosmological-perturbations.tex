@@ -14,11 +14,12 @@
 \usepackage{graphicx}
 \usepackage{mathtools}
 \usepackage{tabularx}
+\usepackage{subfiles}
+\usepackage{cancel}
 \usepackage[T1]{fontenc} % if needed
+\crefname{equation}{}{}
 
-
-
-\title{\boldmath Primordial Cosmological Perturbations under the Invertible Higher-Derivative Disformal Transformation}
+\title{\boldmath Transformation of Primordial Cosmological Perturbations under the Invertible Higher-Derivative Disformal Transformation}
 
 
 %% %simple case: 2 authors, same institution
@@ -157,6 +158,7 @@ with the universe we see today). Once we slot that in the metric, we then apply 
     \item We take this perturbed metric $g_{\mu \nu}$ and then apply the \textbf{TMM disformal transformation}.
     \item This gives us a new metric, denoted as $\hat{g}_{\mu \nu}$.
     \item Essentially, we want to look at the perturbations from two different perspectives, or "frames." First, we look at them in the original frame ($g_{\mu \nu}$) and then compare this to what the TMM frame sees ($\hat{g}_{\mu \nu}$). The central question is: \textbf{are these perturbations invariant} when viewed from these different perspectives?
+    \item We take this a step further and ask what happens at the superhorizon limit.
 \end{enumerate}
 
 \begin{figure}[htbp]
@@ -166,6 +168,14 @@ with the universe we see today). Once we slot that in the metric, we then apply 
 \caption{aion}
 \label{fig:aion}
 \end{figure}
+
+
+\section{The Expanding Universe}
+It is definitely established that the universe is expanding and flat (in large scales of around $~100Mpc$).
+How do we describe this seemingly flat, homogenous, and isotropic universe? 
+
+
+
 
 \section{Mathematical Preliminaries} 
 
@@ -329,20 +339,87 @@ quite confused how this measures the comoving distance. But once we realize that
 we see that $\chi$ scales properly.   
 
 
+\section{The Matter and Energy of a Homogenous and Isotropic Universe}
+The features of the universe on large scales force us to consider the matter and energy (energy-momentum tensor $T^{\mu \nu}$) 
+to take the form of a perfect fluid. Clearly, the universe that we see in our daily lives is not homogenous and isotropic. 
+Thankfully (or not), the universe is way larger than what we experience, and it follows homogeneity and isotropicity. 
 
+\textbf{Why perfect fluids}? A perfect fluid is a fluid with \textbf{no viscocity} and \textbf{no heat conduction}. 
+In other words, the matter and energy must flow without internal friction and there must be no net flow of energy. The flud in this state is described completely 
+by its Energy Density ($\rho$) and Isotropic Pressure ($P$). This is a direct mathematical consequence of an isotropic universe. In the case where
+matter and energy had viscocity and/or heat flow, it would define a preferred spatial direction. And thus we are forced to define the covariant energy-momentum tensor as 
+
+\begin{equation}
+T _ { \mu \nu } = \left( \rho + \frac { P } { c ^ { 2 } } \right) U _ { \mu } U _ { \nu } + P \, g _ { \mu \nu }
+\label{eq:perfectfluid}
+\end{equation}
+
+
+\section{Cosmological Perturbations}
+We define the perturbations of the metric as follows
+
+\begin{equation}
+    ds^2 = -(1+2\Phi)dt^2 + 2aB_{i}dx^idt + a^2[(\delta_{ij})(1-2\Psi) + 2C_{ij}]dx^i dx^j
+    \label{perturbations}
+\end{equation}
+
+Note that although the metric tensor given by $g_{\mu \nu}$ have 16 components, since it is symmetric we only have 10 independent components. 
+Further, note that $ds^2$ (spacetime element) is invariant under coordinate transform; however, the metric tensor, in general is variant under coordinate transform.
+From, \ref{perturbations}, $\Phi, \Psi$ are scalar perturbations, while $B_{i}$ and $C_{ij}$  are vector and tensor perturbations, respectively. 
+
+We wish to probe these scalar perturbations under the following transformation 
+\begin{equation}
+\begin{aligned}
+t &\to t' + \alpha(t, \mathbf{x}) \\
+x^{i} & \to x'^{i} + \beta^{,i}(t,\mathbf{x})
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+
+
+Here, note that the apostrophe/prime symbol ($'$) denotes a transformed coordinate, while a comma ($,$) denotes a derivative. 
+We wish to show that transforming the purely spatial component of the metric tensor gives us (up to first order perturbations)
+\begin{equation}
+\begin{aligned}
+\Psi' &= \Psi + \alpha H\\
+C' &= C - \beta
+\label{eq:spatial}
+\end{aligned}
+\end{equation}
+Here, $H := \frac{\dot{a}}{a}$ and is called the Hubble parameter. 
+Now, recall that the metric tensor, (or any covariant tensor) follows the following transformation law 
+
+\begin{equation}
+g_{\rho \sigma} = g'_{\mu \nu} \frac{\partial x'^{\mu}}{\partial x^\rho} \frac{\partial x'^{\nu}}{\partial x^\sigma}
+\label{eq:covarianttrans}
+\end{equation}
+
+For purely spatial we have
+
+\subfile{disformal.tex}
 \section{Disformal Transformation}
+Consider a spatially flat FLRW background given by 
 
+\begin{equation}
+    d s ^ { 2 } = - d t ^ { 2 } + a ^ { 2 } ( t ) \, \delta _ { i j } \, d x ^ { i } d x ^ { j }
+\end{equation}
+We want to add all possible linear perturbations 
+that behave as scalar or tensor under spatial rotations. This is what we call as SVT-decomposition in linear order. Doing so gives us 
 
-The SVT decomposed perturbed metric with scalar and tensor perturbations is given by
 \begin{equation}
     d s ^ { 2 } = - ( 1 + 2 \xi ) d t ^ { 2 } + 2 \psi _ { ; i } d t d x ^ { i } + a ^ { 2 } ( t ) \left[ ( 1 + 2 \zeta ) \delta _ { i j } + \gamma _ { i j } + 2 E _ { ; i j } \right] d x ^ { i } d x ^ { j }
 \end{equation}
 
-This may be written in ADM formalism as 
+Working in unitary gauge and ADM variables, then
+\begin{equation}
+    \boxed { d s ^ { 2 } = - ( 1 + 2 \alpha ) \, d t ^ { 2 } + 2 \, \partial _ { i } \beta \, d t \, d x ^ { i } + a ^ { 2 } ( t ) \Big [ ( 1 + 2 \mathcal { R } _ { c } ) \delta _ { i j } + \gamma _ { i j } \Big ] d x ^ { i } d x ^ { j } . }
+\end{equation}
 
 \begin{equation}
 d s ^ { 2 } = ( - N ^ { 2 } + h _ { i j } N ^ { i } N ^ { j } ) d t ^ { 2 } + 2 h _ { i j } N ^ { j } d x ^ { i } d t + h _ { i j } d x ^ { i } d x ^ { j }
 \end{equation}
+
 
 The TMM states that
 \begin{equation}
@@ -364,7 +441,7 @@ The scalar field perturbation is defined to be
 The lapse function 
 
 \begin{equation}
-    N \equiv \frac { 1 } { \sqrt { - g ^ { ' \mu \nu } \nabla _ { a } t \nabla _ { b } t } } = \frac { 1 } { - g ^ { 0 0 } }
+    N \equiv \frac { 1 } { \sqrt { - g ^ { ' \mu \nu } \nabla _ { a } t \nabla _ { b } t } } = \frac { 1 } { \sqrt{- g ^ { 0 0 } }}
 \label{eq:lapse}
 \end{equation}
 
@@ -372,15 +449,43 @@ The lapse function
 Referring to Ref. \cite{minamitsujiDisformalTransformationCosmological2014}, we may define the following terms as 
 \begin{equation}
 \begin{aligned}
-X &\coloneq -\frac{1}{2}g{\mu \nu} \nabla_{\mu}\phi \nabla_{\nu}\phi\\
+X &\coloneq -\frac{1}{2}g^{\mu \nu} \nabla_{\mu}\phi \nabla_{\nu}\phi\\
 Y &\coloneq \nabla ^ { \mu } \phi \nabla _ { \mu } X\\ 
 Z &\coloneq \nabla ^ { \mu } X \nabla _ { \mu } X
 \end{aligned}
 \label{eq:coefficients1}
 \end{equation}
 
+Using the definition we have from \ref{eq:coefficients1}, while being under the unitary gauge $\phi = \phi(t)$.
+Note that since the covariant derivative is defined to be 
+\begin{equation}
+\begin{aligned} { \nabla _ { \mu } A ^ { \nu } } & { { } = \partial _ { \mu } A ^ { \nu } + \Gamma _ { \mu \lambda } ^ { \nu } A ^ { \lambda } \, , } \\ { \nabla _ { \mu } B _ { \nu } } & { { } = \partial _ { \mu } B _ { \nu } - \Gamma _ { \mu \nu } ^ { \lambda } B _ { \lambda } \, . } \\ \end{aligned}
+\label{covariantderivative}
+\end{equation}
+
+Then it follows that for a scalar field, the covariant derivative reduces to that of a partial derivative. 
+
+\textit{Proof:} Let $\varphi$ be an arbitrary scalar field. Note that a scalar field is a rank 0 tensor. By the definition of the 
+
+
+
+We have to take note that for a scalar field, the covariant derivative reduces to a normal partial derivative. It follows 
+that $\nabla_{\mu}\phi$ reduces to $\partial_{t}\phi$ and $\partial_{j}\phi$.
+
+
 Taking note of Eq. \ref{eq:coefficients1}, and using unitary gauge where $\phi = \phi(t)$, then we may write these
 as 
+
+By the definition of $X$ from Eq. (\ref{eq:coefficients1}), in unitary gauge this reduces to
+\begin{equation}
+\begin{aligned}
+X & = - \frac { 1 } { 2 } g^{\mu \nu}  \nabla _ { \mu } \phi \nabla _ { \nu } \phi \\
+  &= -\frac{1}{2}g_{00} \nabla_{0}\phi(t)\nabla_{0}\phi(t)\\ 
+  &= -\frac{1}{2}(-1) \partial_{t}\phi\partial_{t}\phi \\ 
+  &= \frac{1}{2}\dot{\phi}^2
+\end{aligned}
+\label{eq:label}
+\end{equation}
 
 \begin{equation}
 \begin{aligned}
@@ -390,6 +495,16 @@ Z &= - \frac{\dot{X}^2}{N^2}
 \end{aligned}
 \label{eq:coefficients2}
 \end{equation}
+\begin{equation}
+X _ { ; \mu } = \begin{cases} { \dot { \bar { X } } - 2 \dot { \bar { X } } \, \alpha - 2 \bar { X } \, \dot { \alpha } , } & { \mu = 0 , } \\ { - 2 \bar { X } \, \partial _ { i } \alpha , } & { \mu = i . } \\ \end{cases}
+\end{equation}
+
+or more concisely we may write this as 
+
+$$
+X _ { ; \mu } = \delta _ { \mu } ^ { 0 } \bigl ( \dot { \bar { X } } - 2 \dot { \bar { X } } \alpha - 2 \bar { X } \dot { \alpha } \bigr ) - 2 \bar { X } \, \delta _ { \mu } ^ { i } \partial _ { i } \alpha
+$$
+
 
 \newpage
 \begin{table}[H]

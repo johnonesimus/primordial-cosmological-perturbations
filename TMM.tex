@@ -1,0 +1,322 @@
+\documentclass[primordial-cosmological-perturbations.tex]{subfiles}
+\begin{document}
+
+\section{The TMM Transformation} 
+Let us decompose the perturbed FLRW metric (with SVT decomposition) as
+\begin{equation}
+\label{eq:perturbedFLRW}
+ds^{2}
+= -(1+2\varphi)\,dt^{2}
++ 2a(\alpha_{,i}+\beta_{i})\,dt\,dx^{i}
++ a^{2}\Big[(1-2\psi)\delta_{ij}+\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big]\,dx^{i}dx^{j},
+\end{equation}
+where $a=a(t)$ is the scale factor, $(\varphi,\alpha,\psi,E)$ are scalar perturbations, $\beta_{i},F_{i}$ are vector perturbations, and $\gamma_{ij}$ are tensor perturbations.
+Note that throughout this transformation a partial derivative is denoted by a comma subscript "$,$". 
+Meanwhile, a covariant derivative is denoted by a semi-colon subscript "$;$".
+
+Under a disformal transformation, the line element becomes
+\begin{equation}
+d\hat{s}^{2}=\hat{g}_{\mu\nu}\,dx^{\mu}dx^{\nu}.
+\end{equation}
+
+The invertible disformal transformation with higher derivatives presented by Takahashi, Motohashi, and Minamitsuji (which we call the TMM transformation for convenience) is
+\begin{equation}
+\label{eq:TMM}
+\hat{g}_{\mu\nu}
+= A\,g_{\mu\nu}
++ B\,\phi_{;\mu}\phi_{;\nu}
++ C\big(\phi_{;\mu}X_{;\nu}+X_{;\mu}\phi_{;\nu}\big)
++ D\,X_{;\mu}X_{;\nu},
+\end{equation}
+where $A,B,C,D$ are functionals of $\phi,X,Y,Z$, and $X,Y,Z$ are defined as
+\begin{equation}
+\label{eq:kinetic-terms}
+X\equiv -\frac{1}{2}g^{\mu\nu}\phi_{;\mu}\phi_{;\nu},
+\qquad
+Y\equiv g^{\mu\nu}\phi_{;\mu}X_{;\nu},
+\qquad
+Z\equiv g^{\mu\nu}X_{;\mu}X_{;\nu}.
+\end{equation}
+
+
+\section{Expanding $d\hat{s}^2$ term-by-term}
+
+Under \eqref{eq:TMM}, the transformed line element can be expanded as
+\begin{equation}
+\label{eq:dshat-expanded}
+\begin{aligned}
+d\hat{s}^{2}
+&= \hat{g}_{\mu\nu}\,dx^{\mu}dx^{\nu} \\
+&= \big(Ag_{00} + B \phi_{;0}^2  + C(2\phi_{;0}X_{;0})  +DX_{;0}^2    \big) dt^2 \\ 
+&= 2\big(Ag_{0i} + B \phi_{;0}\phi_{;i}  + C(\phi_{;0}X_{;i}+X_{;0}\phi_{;i} )  +DX_{;0}X_{;i}  \big)dt dx^i\\
+&= \big(Ag_{ij} + B \phi_{;i}\phi_{;j}  + C(\phi_{;i}X_{;j}+X_{;i}\phi_{;j} )  +DX_{;i}X_{;j}  \big)dx^i dx^j
+\end{aligned}
+\end{equation}
+
+
+
+
+\section{Background-perturbation split}
+We perturb the scalar field as 
+\begin{equation}
+\phi(t, \mathbf{x}) = \bar{\phi(t)} + \delta \phi(t,\mathbf{x})
+\end{equation}
+
+Since this is a scalar field the covariant derivative reduces to partial derivatives, it follows that
+\begin{equation}
+\phi _ { ; 0 } = \partial _ { 0 } \phi = \dot { { \bar { \phi } } } + \delta \dot { \phi } , \qquad \phi _ { ; i } = \partial _ { i } \phi = \delta\phi_{,i} ,
+\label{eq:phi_derivs}
+\end{equation}
+
+Likewise for $X$ we have
+\begin{equation}
+X(x,\mathbf{x}) = \bar{X} + \delta X
+\end{equation} 
+
+Consequently,
+
+\begin{equation}
+X_{;0} = \dot{\bar{X}} +\delta \dot{X}, \qquad X_{;i} = \delta X_{,i}
+\label{eq:xderivs}
+\end{equation}
+
+It should also make sense to split the coefficients since they are functionals of $(\phi, X,Y,Z)$. So we have 
+
+\begin{equation}
+A = \bar { A } + \delta A , \qquad B = \bar { B } + \delta B , \qquad C = \bar { C } + \delta C , \qquad D = \bar { D } + \delta D ,
+\label{eq:ABCDsplit}
+\end{equation}
+
+\subsection{Linear Expression for $X$ }
+\begin{equation}
+\label{eq:X-expand}
+\begin{aligned}
+X
+&= -\frac{1}{2}g^{\mu\nu}\phi_{;\mu}\phi_{;\nu} \\
+&= -\frac{1}{2}g^{00}\dot{\phi}^{\,2} \\
+&= -\frac{1}{2}\big(-(1-2\varphi)\big)\,(\dot{\bar{\phi}}+\delta\dot{\phi})^{2} \\
+&= \Big(\frac{1}{2}-\varphi\Big)\Big(\dot{\bar{\phi}}^{2}+2\dot{\bar{\phi}}\,\delta\dot{\phi}+(\delta\dot{\phi})^{2}\Big) \\
+&= \frac{1}{2}\dot{\bar{\phi}}^{2}+\dot{\bar{\phi}}\,\delta\dot{\phi}-\varphi\,\dot{\bar{\phi}}^{2},
+\end{aligned}
+\end{equation}
+where $g^{00}$ comes from the perturbed metric, and we have dropped higher-order perturbations (e.g.\ $(\delta\dot{\phi})^{2}$).
+
+\section{Linear Expansion of the Transformed Metric}
+
+We are now ready to expand (\ref{eq:dshat-expanded}), using the splits and their derivatives given by \cref{eq:phi_derivs,eq:xderivs,eq:ABCDsplit}, while 
+discarding higher-order perturbations (in other words, $\mathcal{O}(\epsilon^2)$ terms)
+
+\subsection{The $dt^2$ terms}
+We wish to expand 
+\begin{equation}
+A g _ { 0 0 } + B \phi _ { ; 0 } ^ { 2 } + C ( 2 \phi _ { ; 0 } X _ { ; 0 } ) + D X _ { ; 0 } ^ { 2 }
+\end{equation}
+
+\subsubsection*{For $Ag_{00}$} 
+From \cref{eq:perturbedFLRW}, we have $g_{00} = -(1+2\varphi)$ 
+
+Hence,
+\begin{equation}
+\begin{aligned}
+Ag_{{00}} &= -(\bar{A} + \delta A)(1+2\varphi) \\ 
+          &= -(\bar{A} + 2\varphi \bar{A} +\delta A + 2\varphi \delta A) \\
+          &\approx -\bar{A} -\delta A - 2 \bar{A}\varphi
+\end{aligned}
+\label{eq:Ag_00}
+\end{equation}
+
+because $ 2\varphi \delta A$ is $\mathcal{O}(\epsilon^2)$. 
+
+Starting from here we will be introducing a new notation for cases where $\mathcal{O}(\epsilon^n), n\geq 2$. For a particular term 
+that inherits higher-ordered perturbations we will be cancelling them as follows: $\cancelto{}{\text{term}}$.
+
+\subsubsection*{For $B \phi_{;0}^2$ }
+
+Using \cref{eq:ABCDsplit,eq:phi_derivs} we have 
+
+\begin{equation}
+\begin{aligned}
+B \phi_{;0}^2 &= B \dot{\phi}^2 \\ 
+              &=(\bar{B} + \delta B)(\dot{\bar{\phi}} + \delta\dot{\phi})^2 \\ 
+              &=(\bar{B} + \delta B)(\dot{\bar{\phi}})(\dot{\bar{\phi}}^2 + 2\dot{\bar{\phi}}\delta\dot{\phi} + \cancelto{}{\delta \dot{\phi}^2}) \\ 
+              &\approx \bar{B}\dot{\bar{\phi}}^2 + 2\bar{B}\dot{\bar{\phi}}\delta\dot{\phi} + \delta B \dot{\bar{\phi}}^2 + \cancelto{}{2 \dot{\phi} \delta B} \delta \dot{\phi} \\ 
+              &\approx \bar{B}\dot{\bar{\phi}}^2 + 2\bar{B}\dot{\bar{\phi}}\delta\dot{\phi} + \delta B \dot{\bar{\phi}}^2 
+\end{aligned}
+\label{eq:Bphi}
+\end{equation}
+
+\subsubsection*{For the cross-term $C \phi_{;0} X_{;0}$ we have }
+
+\begin{equation}
+\begin{aligned}
+C \phi_{;0} X_{;0} &= (\bar{C} + \delta C)(\dot{\bar{\phi}} + \delta\dot{\phi})(\dot{\bar{X}} + \delta\dot{X}) \\ 
+                   &= (\bar{C} + \delta C)(\dot{\bar{\phi}}\dot{\bar{X}} +\dot{\bar{\phi}} \delta\dot{X} + \delta\dot{\phi} \dot{\bar{X}} +  \cancelto{}{\delta\dot{\phi}\delta \dot{X}}) \\ 
+                   &\approx \bar{C}\dot{\bar{\phi}}\dot{\bar{X}} + \bar{C}\dot{\bar{\phi}} \delta\dot{X} + \bar{C}\delta\dot{\phi} \dot{\bar{X}} + \delta C\dot{\bar{\phi}}\dot{\bar{X}}
+                    + \cancelto{}{\delta C\dot{\bar{\phi}} \delta\dot{X}} + \cancelto{}{\delta C\delta\dot{\phi} \dot{\bar{X}}} \\ 
+                   &\approx \bar{C}\dot{\bar{\phi}}\dot{\bar{X}} + \bar{C}\dot{\bar{\phi}} \delta\dot{X} + \bar{C}\delta\dot{\phi} \dot{\bar{X}} + \delta C\dot{\bar{\phi}}\dot{\bar{X}} 
+\end{aligned}
+\label{eq:Cphix}
+\end{equation}
+
+\subsubsection*{For $D X _ { ; 0 } ^ { 2 }$ }
+Finally we have, 
+
+\begin{equation}
+\begin{aligned}
+D X _ { ; 0 } ^ { 2 } &=(\bar{D} + \delta D)(\dot{\bar{X}} + \delta\dot{X})^2 \\ 
+                      &=(\bar{D} + \delta D)(\dot{\bar{X}}^2 + 2\dot{\bar{X}}\delta\dot{X} + \cancelto{}{(\delta\dot{X})^2}) \\ 
+                      &\approx \bar{D}\dot{\bar{X}}^2 + 2\bar{D}\dot{\bar{X}}\delta\dot{X} + \delta D\dot{\bar{X}}^2 + \cancelto{}{2\delta D \dot{\bar{X}}\delta\dot{X}} \\ 
+                      &\approx \bar{D}\dot{\bar{X}}^2 + 2\bar{D}\dot{\bar{X}}\delta\dot{X} + \delta D\dot{\bar{X}}^2 
+\end{aligned}
+\label{eq:DXsqr}
+\end{equation}
+
+Putting \cref{eq:Ag_00,eq:Bphi,eq:Cphix,eq:DXsqr}, therefore $\hat{g_{00}}$ in linear-order is
+
+\begin{equation}
+\boxed{
+\begin{aligned}
+\hat{g}_{00} \approx &-\bar{A} -\delta A - 2 \bar{A}\varphi \\
+&+ \bar{B}\dot{\bar{\phi}}^2 + 2\bar{B}\dot{\bar{\phi}}\delta\dot{\phi} + \delta B \dot{\bar{\phi}}^2 \\ 
+&+ \bar{C}\dot{\bar{\phi}}\dot{\bar{X}} + \bar{C}\dot{\bar{\phi}} \delta\dot{X} + \bar{C}\delta\dot{\phi} \dot{\bar{X}} + \delta C\dot{\bar{\phi}}\dot{\bar{X}} \\ 
+&+ \bar{D}\dot{\bar{X}}^2 + 2\bar{D}\dot{\bar{X}}\delta\dot{X} + \delta D\dot{\bar{X}}^2 
+\end{aligned}}
+\label{eq:ghat00}
+\end{equation}
+
+
+\section{For the $dt dx^i$  terms}
+We wish to expand $Ag_{0i} + B \phi_{;0}\phi_{;i}  + C(\phi_{;0}X_{;i}+X_{;0}\phi_{;i} )  +DX_{;0}X_{;i}$. We notice that 
+$\phi(t)_{;i}$ vanishes. 
+
+\subsubsection*{For $Ag_{0i}$ }
+\begin{equation}
+\begin{aligned}
+Ag_{0i} &= a(\bar{A} + \delta A)(\alpha_{,i} + \beta_{i})\\
+        &=a(\bar{A} \alpha_{,i} + \bar{A}\beta_{i} + \cancelto{}{\delta A \alpha_{,i}} + \cancelto{}{\delta A \beta_{i}}) \\
+        &\approx a \bar{A}(\alpha_{,i} + \beta_{i})
+\end{aligned}
+\label{eq:Ag_0i}
+\end{equation}
+
+
+\subsubsection*{For $ B \phi_{;0}\phi_{;i} $}
+
+\begin{equation}
+\begin{aligned}
+ B \phi_{;0}\phi_{;i} &= (\bar{B} + \delta B)(\dot{\bar{\phi}} + \delta \dot{\phi})(\delta \phi_{,i}) \\ 
+                      &= (\bar{B} + \delta B)(\delta \phi_{,i}\dot{\bar{\phi}} + \cancelto{}{\delta \phi_{,i}\delta \dot{\phi}}) \\ 
+                      &\approx \bar{B}\delta \phi_{,i}\dot{\bar{\phi}} + \cancelto{}{\delta B \delta \phi_{,i}\dot{\bar{\phi}} } \\ 
+                      &\approx \bar{B} \dot{\bar{\phi}}\delta\phi_{,i}
+\end{aligned}
+\label{eq:Bphi_0i}
+\end{equation}
+
+
+\subsubsection*{For $C ( \phi _ { ; 0 } X _ { ; i } + X _ { ; 0 } \phi _ { ; i } )$ } 
+
+\begin{equation}
+\begin{aligned}
+C (\phi _{ ; 0 }X _{ ; i } + X _ { ; 0 } \phi _ { ; i }) &= ( \bar { C } + \delta C ) \Big [ ( \dot { \bar { \phi } } + \delta \dot { \phi } ) (\delta X_{,i} ) + ( \dot { \bar { X } } + \delta \dot { X } ) (\delta \phi_{,i} ) \Big ] \\ 
+                                                         &= (\bar{C} + \delta C) \Big[ \delta X_{,i}\dot{\bar { \phi } } + \cancelto{}{\delta X_{,i}\delta \dot { \phi }} + \delta \phi_{,i}\dot { \bar { X } } + \cancelto{}{\delta \phi_{,i}\delta \dot { X } }   \Big] \\ 
+                                                         &\approx \bar{C}\delta X_{,i}\dot{\bar { \phi } } + \bar{C}\delta \phi_{,i}\dot { \bar { X } } + \cancelto{}{\delta C \delta X_{,i}\dot{\bar { \phi }} } + \cancelto{}{\delta C\delta \phi_{,i}\dot { \bar { X } }} \\ 
+                                                         &\approx \bar{C}(\delta X_{,i}\dot{\bar { \phi } } + \delta \phi_{,i}\dot { \bar { X } } )
+\end{aligned}
+\label{eq:Cphi0xix0phii}
+\end{equation}
+
+\subsubsection*{For $D X_{;0}X_{;i}$}
+
+\begin{equation}
+\begin{aligned}
+D X_{;0}X_{;i} &= (\bar{D} + \delta D) (\dot{\bar{X}} + \delta \dot{X})\delta X_{,i} \\ 
+               &= (\bar{D} + \delta D) (\delta X_{,i}\dot{\bar{X}} + \cancelto{}{\delta X_{,i}\delta \dot{X}}) \\ 
+               &\approx \bar{D}\delta X_{,i}\dot{\bar{X}} + \cancelto{}{\delta D\delta X_{,i}\dot{\bar{X}}} \\ 
+               &\approx \bar{D}\dot{\bar{X}}\delta X_{,i}
+\end{aligned}
+\label{eq:Dx0xi}
+\end{equation}
+
+
+Finally, putting together \cref{eq:Ag_0i,eq:Bphi_0i,eq:Cphi0xix0phii,eq:Dx0xi} $\hat{g}_0i$ in linear order is given by 
+\begin{equation}
+\boxed{
+\hat{g}_{0i} \approx a \bar{A}(\alpha_{,i} + \beta_{i}) + \bar{B} \dot{\bar{\phi}}\delta\phi_{,i} + \bar{C}(\delta X_{,i}\dot{\bar { \phi } } + \delta \phi_{,i}\dot { \bar { X } }) + \bar{D}\dot{\bar{X}}\delta X_{,i}
+}
+\label{eq:ghat0i}
+\end{equation} 
+
+
+
+
+\subsection{For $dx^i dx^j$ terms}
+
+We wish to expand $Ag_{ij} + B \phi_{;i}\phi_{;j}  + C(\phi_{;i}X_{;j}+X_{;i}\phi_{;j} )  +DX_{;i}X_{;j}$.
+Now before we proceed, we have established from \cref{eq:phi_derivs,eq:xderivs} that the perturbations with derivatives 
+with respect to spatial components are already first-order. Hence this reduces to 
+
+\begin{equation}
+\begin{aligned}
+Ag_{ij} + \cancelto{}{B \phi_{;i}\phi_{;j}}  + \cancelto{}{C(\phi_{;i}X_{;j}+X_{;i}\phi_{;j} ) } +\cancelto{}{DX_{;i}X_{;j}}\\ 
+\end{aligned}
+\end{equation}
+
+
+A huge shout-out to cosmological perturbations for making the math bearable. From \cref{eq:perturbedFLRW} 
+we have $g_{ij} = a^{2}\Big[(1-2\psi)\delta_{ij}+\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big]$; then
+
+\begin{equation}
+\begin{aligned}
+Ag_{ij} =&\,  a^2 (\bar{A} + \delta A) \Big[(1-2\psi)\delta_{ij}+\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big] \\ 
+        =&\, a^2 \bar{A}\Big[(1-2\psi)\delta_{ij}+\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big] \\ 
+           &+  \delta A \Big[(1-2\psi)\delta_{ij}+\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big] \\ 
+        \approx&\, a^2 \bar{A}\Big[(1-2\psi)\delta_{ij}+\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big] + a^2\delta A \delta_{ij} \\ 
+        \approx&\, a^2 \bar{A} [(1-2\psi + \delta A / \bar{A})\delta_{ij} +\gamma_{ij}+2E_{,ij}+2F_{(i,j)} ]
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+Then it follows that 
+\begin{equation}
+\boxed{
+\hat{g}_{ij} \approx a^2 \bar{A} [(1-2\psi + \delta A / \bar{A})\delta_{ij} +\gamma_{ij}+2E_{,ij}+2F_{(i,j)} ]
+}
+\label{eq:ghatij}
+\end{equation}
+
+\newpage
+\section{Finally $d\hat{s}^2$ }
+And so with
+\begin{equation}
+d \hat { s } ^ { 2 } = \hat { g } _ { 0 0 } \, d t ^ { 2 } + 2 \hat { g } _ { 0 i } \, d t \, d x ^ { i } + \hat { g } _ { i j } \, d x ^ { i } d x ^ { j }
+\end{equation} 
+
+and collecting our results given by \cref{eq:ghat00,eq:ghat0i,eq:ghatij} we finally have 
+
+
+\begin{equation}
+\boxed{
+\begin{aligned}
+d\hat s^{2}\simeq\;&
+\Big[
+-\bar{A} -\delta A - 2 \bar{A}\varphi + \bar{B}\dot{\bar{\phi}}^2 + 2\bar{B}\dot{\bar{\phi}}\delta\dot{\phi} + \delta B \dot{\bar{\phi}}^2 \\ 
+&+ \bar{C}\dot{\bar{\phi}}\dot{\bar{X}} + \bar{C}\dot{\bar{\phi}} \delta\dot{X} + \bar{C}\delta\dot{\phi} \dot{\bar{X}} + \delta C\dot{\bar{\phi}}\dot{\bar{X}} + \bar{D}\dot{\bar{X}}^2 + 2\bar{D}\dot{\bar{X}}\delta\dot{X} + \delta D\dot{\bar{X}}^2 ]\,dt^{2}
+\\
+&\;+\;2\Big[
+a\bar{A}(\alpha_{,i}+\beta_{i})
++\bar{B}\dot{\bar{\phi}}\,\delta\phi_{,i}
++\bar{C}\big(\dot{\bar{\phi}}\,\delta X_{,i}+\dot{\bar{X}}\,\delta\phi_{,i}\big)
++\bar{D}\dot{\bar{X}}\,\delta X_{,i}
+\Big]\,dt\,dx^{i}
+\\
+&\;+\;
+a^{2}\bar A \Big[\Big(1-2\psi+\frac{\delta A}{\bar A}\Big)\delta_{ij}
++\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big]\,dx^{i}dx^{j}.
+\end{aligned}
+}
+\label{eq:dshat-final}
+\end{equation}
+
+
+
+\end{document}

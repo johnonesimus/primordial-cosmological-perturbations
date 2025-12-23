@@ -1,0 +1,199 @@
+\documentclass[primordial-cosmological-perturbations.tex]{subfiles}
+\begin{document}
+
+\section{Disformal Transformation}
+
+\subsection{Perturbing the FLRW Metric}
+
+Let us decompose the perturbed FLRW metric (with SVT decomposition) as
+\begin{equation}
+\label{eq:perturbedFLRW}
+ds^{2}
+= -(1+2\varphi)\,dt^{2}
++ 2a(\alpha_{,i}+\beta_{i})\,dt\,dx^{i}
++ a^{2}\Big[(1-2\psi)\delta_{ij}+\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big]\,dx^{i}dx^{j},
+\end{equation}
+where $a=a(t)$ is the scale factor, $(\varphi,\alpha,\psi,E)$ are scalar perturbations, $\beta_{i},F_{i}$ are vector perturbations, and $\gamma_{ij}$ are tensor perturbations.
+
+Under a disformal transformation, the line element becomes
+\begin{equation}
+d\hat{s}^{2}=\hat{g}_{\mu\nu}\,dx^{\mu}dx^{\nu}.
+\end{equation}
+
+The invertible disformal transformation with higher derivatives presented by Takahashi, Motohashi, and Minamitsuji (which we call the TMM transformation for convenience) is
+\begin{equation}
+\label{eq:TMM}
+\hat{g}_{\mu\nu}
+= A\,g_{\mu\nu}
++ B\,\phi_{;\mu}\phi_{;\nu}
++ C\big(\phi_{;\mu}X_{;\nu}+X_{;\mu}\phi_{;\nu}\big)
++ D\,X_{;\mu}X_{;\nu},
+\end{equation}
+where $A,B,C,D$ are functionals of $\phi,X,Y,Z$, and $X,Y,Z$ are defined as
+\begin{equation}
+\label{eq:kinetic-terms}
+X\equiv -\frac{1}{2}g^{\mu\nu}\phi_{;\mu}\phi_{;\nu},
+\qquad
+Y\equiv g^{\mu\nu}\phi_{;\mu}X_{;\nu},
+\qquad
+Z\equiv g^{\mu\nu}X_{;\mu}X_{;\nu}.
+\end{equation}
+
+The TMM form can be simplified by a ``completing-the-square'' step. We have ``squared'' covariant-derivative terms of $\phi$, cross terms in the middle, and ``squared'' covariant-derivative terms of $X$. Recall the elementary identity
+\begin{equation}
+\label{eq:completing-square}
+ax^{2}+2bxy+cy^{2}
+= a\Big(x+\frac{b}{a}y\Big)^{2}+\Big(c-\frac{b^{2}}{a}\Big)y^{2}.
+\end{equation}
+Identifying $a=B$, $b=C$, and $c=D$, the last three terms in \eqref{eq:TMM} combine as
+\begin{equation}
+\label{eq:square-step}
+B\Big(\phi_{;\mu}+\frac{C}{B}X_{;\mu}\Big)\Big(\phi_{;\nu}+\frac{C}{B}X_{;\nu}\Big)
++\Big(D-\frac{C^{2}}{B}\Big)X_{;\mu}X_{;\nu}.
+\end{equation}
+Hence, \eqref{eq:TMM} may be rewritten as
+\begin{equation}
+\label{eq:TMM-square}
+\hat{g}_{\mu\nu}
+= A\,g_{\mu\nu}
++ B\Big(\phi_{;\mu}+\frac{C}{B}X_{;\mu}\Big)\Big(\phi_{;\nu}+\frac{C}{B}X_{;\nu}\Big)
++ \Big(D-\frac{C^{2}}{B}\Big)X_{;\mu}X_{;\nu}.
+\end{equation}
+
+If we define
+\begin{equation}
+\label{eq:Phi-Delta-def}
+\Phi_{\mu}\equiv \sqrt{B}\Big(\phi_{;\mu}+\frac{C}{B}X_{;\mu}\Big),
+\qquad
+\Delta\equiv D-\frac{C^{2}}{B},
+\end{equation}
+then the transformation reduces cleanly to
+\begin{equation}
+\label{eq:simplifiedTMM}
+\boxed{\hat{g}_{\mu\nu}=A\,g_{\mu\nu}+\Phi_{\mu}\Phi_{\nu}+\Delta\,X_{;\mu}X_{;\nu}.}
+\end{equation}
+
+Under \eqref{eq:simplifiedTMM}, the transformed line element can be expanded as
+\begin{equation}
+\label{eq:dshat-expanded}
+\begin{aligned}
+d\hat{s}^{2}
+&= \hat{g}_{\mu\nu}\,dx^{\mu}dx^{\nu} \\
+&= \big(Ag_{00}+\Phi_{0}\Phi_{0}+\Delta\,X_{;0}X_{;0}\big)\,dt^{2} \\
+&\quad + 2\big(Ag_{0i}+\Phi_{0}\Phi_{i}+\Delta\,X_{;0}X_{;i}\big)\,dt\,dx^{i} \\
+&\quad + \big(Ag_{ij}+\Phi_{i}\Phi_{j}+\Delta\,X_{;i}X_{;j}\big)\,dx^{i}dx^{j}.
+\end{aligned}
+\end{equation}
+
+Consequently, take the perturbed scalar field $\phi=\bar{\phi}+\delta\phi$. Then
+\begin{equation}
+\label{eq:X-expand}
+\begin{aligned}
+X
+&= -\frac{1}{2}g^{\mu\nu}\phi_{;\mu}\phi_{;\nu} \\
+&= -\frac{1}{2}g^{00}\dot{\phi}^{\,2} \\
+&= -\frac{1}{2}\big(-(1-2\varphi)\big)\,(\dot{\bar{\phi}}+\delta\dot{\phi})^{2} \\
+&= \Big(\frac{1}{2}-\varphi\Big)\Big(\dot{\bar{\phi}}^{2}+2\dot{\bar{\phi}}\,\delta\dot{\phi}+(\delta\dot{\phi})^{2}\Big) \\
+&= \frac{1}{2}\dot{\bar{\phi}}^{2}+\dot{\bar{\phi}}\,\delta\dot{\phi}-\varphi\,\dot{\bar{\phi}}^{2},
+\end{aligned}
+\end{equation}
+where $g^{00}$ comes from the perturbed metric, and we have dropped higher-order perturbations (e.g.\ $(\delta\dot{\phi})^{2}$).
+
+It is natural to split $A, \Phi_{0}$, and $\Delta$ as 
+\begin{equation}
+A = \bar { A } + \delta A , \qquad \Phi _ { 0 } = \bar { \Phi } _ { 0 } + \delta \Phi _ { 0 } , \qquad \Delta = \bar { \Delta } + \delta \Delta ,
+\label{eq:splits}
+\end{equation}
+
+Notice that from (\ref{eq:Phi-Delta-def}) we have 
+
+\begin{equation}
+\begin{aligned}
+\Phi_{0} &= \sqrt { B } \Big ( \phi _ { ; 0 } + \cfrac { C } { B } X _ { ; 0} \Big  ) \\
+         &= \sqrt{B} \Big ( \dot{\bar{\phi}} + \delta\dot{\phi} +\frac{C}{B}(\dot{\bar{X}}+\delta\dot{X}) \Big)
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+Where we see to have zeroth order perturbations given back the background variables. On the other hand for the spatial component, notice 
+
+\begin{equation}
+\begin{aligned}
+\Phi_{i} &= \sqrt { B } \Big ( \phi _ { ; i } + \cfrac { C } { B } X _ { ; i} \Big  ) \\
+         &= \sqrt { B } \Big (\cfrac { C } { B } (\bar{X_{,i}} + \delta X_{,i}) \Big  ) \\ 
+         &= \sqrt { B } \Big (\cfrac { C } { B } \delta X_{,i} \Big )
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+Where again, the background term vanishes under a spatial covariant derivative since it is only dependent upon time. On the other hand, 
+we are left with $\delta X_{,i}$ which is a first order perturbation. Hence, we choose not to "split" the spatial components of $\Phi_{\mu}$ 
+
+\subsection{For the $dt^2$ terms}
+
+From the perturbed metric given by (\ref{eq:perturbedFLRW}) we have $g_{00} = -(1=2\varphi)$  it follows that 
+\begin{equation}
+\begin{aligned}
+Ag_{{00}} &= -(\bar{A} + \delta A)(1+2\varphi) \\ 
+          &= -(\bar{A} + 2\varphi \bar{A} +\delta A + 2\varphi \delta A) \\
+          &\approx -\bar{A} -\delta A - 2 \bar{A}\varphi
+\end{aligned}
+\label{eq:Ag_00}
+\end{equation}
+
+On the other hand
+\begin{equation}
+\Phi_{0}^2 = (\bar{\Phi_{0}} + \delta\Phi_{0})^2 = \bar{\Phi_{0}}^2 + 2\Phi_{o}
+\label{eq:Phi0sq}
+\end{equation}
+
+Finally, 
+\begin{equation}
+\begin{aligned}
+\Delta X_{;0}X_{;0} &= (\bar{\Delta} + \delta \Delta) (\dot{\bar{X}} + \delta X)^2 \\
+                    &= (\bar{\Delta} + \delta \Delta)(\dot{\bar{X}}^2 + 2\bar{\dot{X}}\delta X + \overbrace{(\delta X)^2)}^\text{2nd order} \\ 
+                    &\approx \bar{\Delta} \dot{\bar{X}}^2 + \delta \Delta \dot{\bar{X}}^2 + 2\bar{\Delta} \dot{\bar{X}} \delta X + \underbrace{2\delta \Delta \dot{\bar{X}}\delta X}_{\text{2nd order}} \\
+                    &\approx \bar{\Delta} \dot{\bar{X}}^2 + \delta \Delta \dot{\bar{X}}^2 + 2\bar{\Delta} \dot{\bar{X}} \delta X  
+\end{aligned}
+\label{eq:DeltaX0sq}
+\end{equation}
+
+
+\subsection{For $dt dx^i$ terms}
+Again, given by (\ref{eq:perturbedFLRW}) we find that $g_{0i} = a(\alpha_{,i} + \beta_{i})$. So for $Ag_{0i}$ we have 
+
+\begin{equation}
+\begin{aligned}
+Ag_{0i} &= a(\bar{A} + \delta A)(\alpha_{,i} + \beta_{i})\\
+        &=a(\bar{A} \alpha_{,i} + \bar{A}\beta_{i} + \delta A \alpha_{,i} + \delta A \beta_{i}) \\
+        &\approx a \bar{A}(\alpha_{,i} + \beta_{i})
+\end{aligned}
+\label{eq:Ag_0i}
+\end{equation}
+
+For $\Phi_{0} \Phi_{i}$ note that we have already established that $\Phi_{i}$ is a already a first order perturbation. Then 
+
+\begin{equation}
+\begin{aligned}
+\Phi_{0}\Phi_{i} &= (\bar{\Phi_{0}} + \delta \Phi_{0})(\Phi_{i}) \\ 
+                 &= \bar{\Phi_{0}}\Phi_{i} + \delta \Phi_{0}\Phi_{i} \\ 
+                 &\approx \bar{\Phi_{0}}\Phi_{i}
+\end{aligned}
+\label{eq:Phi0Phii}
+\end{equation}
+
+On the other hand, for $\Delta X_{{;0}} X_{{;i}}$, note that $X_{{;i}} = \bar{X}_{;i} + \delta X_{;i} = \delta X_{;i}$ since background 
+quantities are only time dependent. So,
+\begin{equation}
+\begin{aligned}
+\Delta X_{{;0}} X_{{;i}} &= (\bar{\Delta} + \delta \Delta)(\bar{X}_{;0} + \delta X_{;0}) \delta X_{;i} \\ 
+                         &= (\bar{\Delta} \dot{\bar{X}} + \bar{\Delta}\delta\dot{X} + \delta \Delta \dot{\bar{X}} + \delta \Delta \delta \dot{X}) \delta X_{,i} \\
+                         &\approx (\bar{\Delta} \dot{\bar{X}} + \bar{\Delta}\delta\dot{X} + \delta \Delta \dot{\bar{X}}) \delta X_{,i} \\
+                         &\approx \bar{\Delta}\dot{\bar{X}}\delta X_{,i}
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+\subsection{For $dx^i dx^j$ terms}
+
+\end{document}

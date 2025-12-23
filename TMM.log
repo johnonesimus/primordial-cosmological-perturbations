@@ -3,11 +3,16 @@ entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex"
-(/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/primordial-cosmological-perturbations.tex
+**"/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/TMM.tex"
+(/Users/johnonesimus/Desktop/Primordial Cosmological Perturbations under Disformal Transformation/TMM.tex
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
-(/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
+(/usr/local/texlive/2025/texmf-dist/tex/latex/subfiles/subfiles.cls
+Document Class: subfiles 2020/11/14 v2.2 Multi-file projects (class)
+Preamble taken from file `primordial-cosmological-perturbations.tex'
+(/usr/local/texlive/2025/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+) (./primordial-cosmological-perturbations.tex (/usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2025/01/22 v1.4n Standard LaTeX document class
 (/usr/local/texlive/2025/texmf-dist/tex/latex/base/size11.clo
 File: size11.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
@@ -373,61 +378,34 @@ Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
 \TX@ftn=\toks30
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/subfiles/subfiles.sty
 Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
- (/usr/local/texlive/2025/texmf-dist/tex/latex/import/import.sty
-Package: import 2020/04/01  v 6.2
-)) (/usr/local/texlive/2025/texmf-dist/tex/latex/cancel/cancel.sty
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/cancel/cancel.sty
 Package: cancel 2013/04/12 v2.2 Cancel math terms
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
-) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+))) (/usr/local/texlive/2025/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2025-06-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count323
-) (./primordial-cosmological-perturbations.aux
+) (./TMM.aux)
+\openout1 = `TMM.aux'.
 
-LaTeX Warning: Label `eq:label' multiply defined.
-
-
-LaTeX Warning: Label `eq:label@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:label' multiply defined.
-
-
-LaTeX Warning: Label `eq:label@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:label' multiply defined.
-
-
-LaTeX Warning: Label `eq:label@cref' multiply defined.
-
-
-LaTeX Warning: Label `eq:label' multiply defined.
-
-
-LaTeX Warning: Label `eq:label@cref' multiply defined.
-
-)
-\openout1 = `primordial-cosmological-perturbations.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 2.
+LaTeX Font Info:    ... okay on input line 2.
  (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count324
@@ -459,179 +437,137 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-Package hyperref Info: Link coloring ON on input line 61.
- (./primordial-cosmological-perturbations.out) (./primordial-cosmological-perturbations.out)
+Package hyperref Info: Link coloring ON on input line 2.
+ (./TMM.out) (./TMM.out)
 \@outlinefile=\write3
-\openout3 = `primordial-cosmological-perturbations.out'.
+\openout3 = `TMM.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 6.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 62.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 6.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-Package hyperref Warning: Ignoring empty anchor on input line 62.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 42.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 62.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 42.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 42.
+
+
+Overfull \hbox (3.62076pt too wide) in paragraph at lines 83--84
+[]\T1/cmr/m/n/10.95 It should also make sense to split the co-ef-fi-cients since they are func-tion-als of $\OT1/cmr/m/n/10.95 (\OML/cmm/m/it/10.95 ^^^; X; Y; Z\OT1/cmr/m/n/10.95 )$\T1/cmr/m/n/10.95 .
+ []
 
 
 
-[0
+[1
 
-{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./primordial-cosmological-perturbations.toc)
-\tf@toc=\write4
-\openout4 = `primordial-cosmological-perturbations.toc'.
+{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 90.
 
 
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 90.
 
-[1]
-<pasted-images/flatness1.png, id=137, 3359.55125pt x 1320.935pt>
-File: pasted-images/flatness1.png Graphic file (type png)
-<use pasted-images/flatness1.png>
-Package pdftex.def Info: pasted-images/flatness1.png  used on input line 101.
-(pdftex.def)             Requested size: 322.65479pt x 126.86072pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 109.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 109.
+
 
 
 [2]
 
-[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./pasted-images/flatness1.png>]
-<pasted-images/aion.png, id=156, 1061.9675pt x 611.28375pt>
-File: pasted-images/aion.png Graphic file (type png)
-<use pasted-images/aion.png>
-Package pdftex.def Info: pasted-images/aion.png  used on input line 167.
-(pdftex.def)             Requested size: 279.63152pt x 160.9634pt.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 188.
 
-Underfull \vbox (badness 4378) has occurred while \output is active []
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 188.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 188.
+
+
+
+[3]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 252.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 252.
 
 
 
 [4]
-<pasted-images/primordial-cosmological-perturbations-00-21-20.png, id=171, 777.90625pt x 360.34625pt>
-File: pasted-images/primordial-cosmological-perturbations-00-21-20.png Graphic file (type png)
-<use pasted-images/primordial-cosmological-perturbations-00-21-20.png>
-Package pdftex.def Info: pasted-images/primordial-cosmological-perturbations-00-21-20.png  used on input line 194.
-(pdftex.def)             Requested size: 279.63152pt x 129.5321pt.
 
-
-[5 <./pasted-images/aion.png> <./pasted-images/primordial-cosmological-perturbations-00-21-20.png>]
-
-[6]
-<pasted-images/comovinglight.png, id=195, 1754.555pt x 222.8325pt>
-File: pasted-images/comovinglight.png Graphic file (type png)
-<use pasted-images/comovinglight.png>
-Package pdftex.def Info: pasted-images/comovinglight.png  used on input line 318.
-(pdftex.def)             Requested size: 279.63152pt x 35.51111pt.
-
-
-[7]
-
-[8 <./pasted-images/comovinglight.png>] (./disformal.tex
-
-[9]
-
-[10]
+[5]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 132.
+(hyperref)                removing `math shift' on input line 288.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 132.
+(hyperref)                removing `superscript' on input line 288.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 132.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 162.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 162.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 162.
+(hyperref)                removing `math shift' on input line 288.
 
 
 
-[11]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 197.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 197.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `superscript' on input line 197.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 197.
-
-)
-
-[12]
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 554--554
-[]|\T1/cmr/m/n/10 The orig-i-nal pro-posal
- []
-
-
-Underfull \hbox (badness 6001) in paragraph at lines 554--554
-\T1/cmr/m/n/10 fac-tor $\OML/cmm/m/it/10 A$ \T1/cmr/m/n/10 and dis-for-mal
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 554--554
-\T1/cmr/m/n/10 trans-for-ma-tion in first
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 554--554
-\T1/cmr/m/n/10 func-tions ($\OML/cmm/m/it/10 A; B; C; D$\T1/cmr/m/n/10 )
- []
-
-
-
-[14] (./primordial-cosmological-perturbations.bbl)
-
-[15] (./primordial-cosmological-perturbations.aux)
+[6] (./TMM.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-09-02>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package rerunfilecheck Info: File `primordial-cosmological-perturbations.out' has not changed.
-(rerunfilecheck)             Checksum: BD407E8BA74196AC842982A13CB9E3BC;4371.
+Package rerunfilecheck Info: File `TMM.out' has not changed.
+(rerunfilecheck)             Checksum: 51775C02C476016F42B525749C1D8A76;1519.
  ) 
 Here is how much of TeX's memory you used:
- 15174 strings out of 467797
- 253483 string characters out of 5431803
- 666185 words of memory out of 5000000
- 43481 multiletter control sequences out of 15000+600000
- 651994 words of font info for 101 fonts, out of 8000000 for 9000
+ 14928 strings out of 467797
+ 247684 string characters out of 5431803
+ 676974 words of memory out of 5000000
+ 43324 multiletter control sequences out of 15000+600000
+ 639520 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,18n,93p,620b,573s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfcc1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfsx1728.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on primordial-cosmological-perturbations.pdf (16 pages, 2075997 bytes).
+ 110i,17n,113p,445b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on TMM.pdf (6 pages, 172724 bytes).
 PDF statistics:
- 481 PDF objects out of 1000 (max. 8388607)
- 386 compressed objects within 4 object streams
- 114 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 201 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 51 named destinations out of 1000 (max. 500000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
