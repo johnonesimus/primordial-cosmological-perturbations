@@ -284,7 +284,6 @@ Then it follows that
 \label{eq:ghatij}
 \end{equation}
 
-\newpage
 \section{Finally $d\hat{s}^2$ }
 And so with
 \begin{equation}
@@ -295,9 +294,8 @@ and collecting our results given by \cref{eq:ghat00,eq:ghat0i,eq:ghatij} we fina
 
 
 \begin{equation}
-\boxed{
 \begin{aligned}
-d\hat s^{2}\simeq\;&
+d\widehat{s}^2=\;&
 \Big[
 -\bar{A}-\delta A-2\bar{A}\varphi
 +\bar{B}\dot{\bar{\phi}}^{2}+2\bar{B}\dot{\bar{\phi}}\,\delta\dot{\phi}+\delta B\,\dot{\bar{\phi}}^{2}
@@ -323,10 +321,377 @@ a\bar{A}(\alpha_{,i}+\beta_{i})
 a^{2}\bar A \Big[\Big(1-2\psi+\frac{\delta A}{\bar A}\Big)\delta_{ij}
 +\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big]\,dx^{i}dx^{j}.
 \end{aligned}
-}
 \label{eq:dshat-final}
 \end{equation}
 
+Cleaning it up a bit to match Ref. \cite{alineaTransformationPrimordialCosmological2021}, then
+
+\begin{equation}
+\begin{aligned}
+d\widehat{s}^{2}=
+\Big[
+&-\bar{A}-\delta A-2\bar{A}\varphi
++\bar{B}\dot{\bar{\phi}}^{2}+2\bar{B}\dot{\bar{\phi}}\,\delta\dot{\phi}+\delta B\,\dot{\bar{\phi}}^{2}
+\\
+\quad
+&+2\Big(\bar{C}\dot{\bar{\phi}}\dot{\bar{X}}
++\bar{C}\dot{\bar{\phi}}\,\delta\dot{X}
++\bar{C}\delta\dot{\phi}\,\dot{\bar{X}}
++\delta C\,\dot{\bar{\phi}}\dot{\bar{X}}\Big)
+\\
+\quad
+&+\bar{D}\dot{\bar{X}}^{2}+2\bar{D}\dot{\bar{X}}\,\delta\dot{X}+\delta D\,\dot{\bar{X}}^{2}
+\Big]\,dt^{2}
+\\
+&+2a\bar{A}^{\frac{1}{2}}\Big[
+\bar{A}^{\frac{1}{2}}(\alpha_{,i}+\beta_{i})
++\big[\bar{B}\dot{\bar{\phi}}\,\delta\phi_{,i}
++\bar{C}\big(\dot{\bar{\phi}}\,\delta X_{,i}+\dot{\bar{X}}\,\delta\phi_{,i}\big)
++\bar{D}\dot{\bar{X}}\,\delta X_{,i}\big] \big/a \bar{A}^{\frac{1}{2}}
+\Big]\,dt\,dx^{i}
+\\
+&+
+a^{2}\bar A \Big[\Big(1-2\psi+\frac{\delta A}{\bar A}\Big)\delta_{ij}
++\gamma_{ij}+2E_{,ij}+2F_{(i,j)}\Big]\,dx^{i}dx^{j}.
+\end{aligned}
+\label{eq:dshat-final2}
+\end{equation}
+
+If we switch off all perturbations, then the hatted metric becomes 
+
+\begin{equation}
+\begin{aligned}
+d\widehat{s} = - \Big[\bar{A} + \bar{B}\dot{\bar{\phi}}^{2} + 2\bar{C}\dot{\bar{\phi}}\dot{\bar{X}} + \bar{D}\dot{\bar{X}}^2\Big]dt^2 + a^2\bar{A}\delta_{ij}dx^idx^j
+\end{aligned}
+\label{eq:dshat-noperturb}
+\end{equation}
+
+For brevity let us define 
+\begin{equation}
+\mathcal{N} \equiv \bar{A} + \bar{B}\dot{\bar{\phi}}^{2} + 2\bar{C}\dot{\bar{\phi}}\dot{\bar{X}} + \bar{D}\dot{\bar{X}}^2
+\label{eq:Ncal}
+\end{equation}
+
+And so the hatted metric cleanly reduces to 
+\begin{equation}
+d\widehat{s} = - \mathcal{N}dt^2 + a^2\bar{A}\delta_{ij}dx^idx^j
+\label{eq:dshat-noperturb-clean}
+\end{equation}
+
+Now, \cref{eq:dshat-noperturb-clean}, following the form of the background FLRW metric, 
+is suggestive of coordinate time and scale factor scaling. Following the idea for pure conformal transformation,
+we may then define the hatted time coordinate and scale factor as 
+
+\begin{equation}
+\mathrm { d } \widehat { t } ^ { 2 } \equiv \mathcal{N} \mathrm { d } t ^ { 2 } \quad \text{ and } \quad \widehat { a } \equiv a \bar { A } ^ { \frac 1 2 }
+\label{eq:hatted-time-scale}
+\end{equation}
+
+We may also simply write the perturbed FLRW metric as 
+\begin{equation}
+d\widehat{s}^2 =-(1+2\widehat{\varphi})d\widehat{t}^2 + 2\widehat{a}(\widehat{\alpha}_,i + \widehat{\beta}_i)d\widehat{t} dx^i 
++\widehat{a}^2 \Big[(1-2\widehat{\psi})\delta_{ij} + \widehat{\gamma}_{ij} + 2\widehat{E}_{,ij}+2\widehat{F}_{(i,j)}\Big]dx^i dx^j
+\label{eq:label}
+\end{equation}
+
+Also, again recall that 
+
+\begin{equation}
+d\widehat{s}^2 = \widehat{g}_{00}dt^2 + 2\widehat{g}_{0i}dt dx^i + \widehat{g}_{ij}dx^idx^j
+\label{eq:label}
+\end{equation}
+
+Then
+\begin{equation}
+-(1+2\widehat{\varphi})d \widehat{t}^2 = \underbrace{-(1+ 2\widehat{\varphi})\mathcal{N}}_{\widehat{g}_{00}}dt^2
+\label{eq:label}
+\end{equation}
+
+Again recall that we've recovered $\widehat{g}_{00}$
+for linear order perturbations given by \cref{eq:ghat00}. We can define 
+the first order perturbations as 
+
+\begin{equation}
+\begin{aligned}
+\widetilde{\mathcal{N}} \equiv &-\delta A -2\bar{A}\varphi + 2\bar{B}\dot{\bar{\phi}}\delta\dot{\phi} + \delta B \dot{\bar{\phi}}^2  \\
+&+ 2(\bar{C}\dot{\bar{\phi}} \delta\dot{X} + \bar{C}\delta\dot{\phi} \dot{\bar{X}} + \delta C\dot{\bar{\phi}}\dot{\bar{X}}) \\ 
+&+ 2\bar{D}\dot{\bar{X}}\delta\dot{X} + \delta D\dot{\bar{X}}^2 
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+Thus we may write \cref{eq:ghat00} as 
+\begin{equation}
+\widehat{g}_{00} = -\mathcal{N} - (2\bar{A}\varphi + \widetilde{\mathcal{N}})
+\label{eq:label}
+\end{equation}
+
+So we have
+
+
+
+\begin{equation}
+ -\mathcal{N} - (2\bar{A}\varphi + \delta \mathcal{N}) = -(1+ 2\widehat{\varphi})\mathcal{N} \\ 
+\label{eq:label}
+\end{equation}
+
+Finally,
+\begin{equation}
+\boxed{
+\widehat{\varphi} = \frac{\bar{A} \varphi + \widetilde{\mathcal{N}} / 2}{\mathcal{N}}
+}
+\label{eq:00comp}
+\end{equation}
+
+
+On the other hand, for the $0i-$components we have 
+\begin{equation}
+\begin{aligned}
+2\widehat a\big(\widehat\alpha_{,i}+\widehat\beta_i\big)
+&=
+\frac{2a\bar A^{1/2}}{\mathcal N^{\frac{1}{2}}}
+\left\{
+\bar A^{1/2}\big(\alpha_{,i}+\beta_i\big)
++\frac{
+\bar B\,\dot{\bar\phi}\,\delta\phi_{,i}
++\bar C\!\left(\dot{\bar\phi}\,\delta X_{,i}+\dot{\bar X}\,\delta\phi_{,i}\right)
++\bar D\,\dot{\bar X}\,\delta X_{,i}}{a\,\bar A^{1/2}}
+\right\} \\ 
+&=
+\frac{2\widehat{a}}{\mathcal N^{\frac{1}{2}}}
+\left\{
+\bar A^{1/2}\big(\alpha_{,i}+\beta_i\big)
++\frac{
+\bar B\,\dot{\bar\phi}\,\delta\phi_{,i}
++\bar C\!\left(\dot{\bar\phi}\,\delta X_{,i}+\dot{\bar X}\,\delta\phi_{,i}\right)
++\bar D\,\dot{\bar X}\,\delta X_{,i}}{\widehat{a}}
+\right\} 
+\end{aligned}
+\label{eq:0icomp}
+\end{equation}
+
+Owing to the Helmholtz decomposition, we know that any spatial vector field $V_{i}(\mathbf{x})$ can be uniquely 
+written as $V_{i} + V_{,i} + V_{i}$ with $\partial^iV_{i}=0$ and $V_{,i}$ is the scalar mode. Clearly, the terms with a partial derivative 
+are scalar and must contribute to the scalar shift $\widehat{\alpha}_{i}$. On the other hand the terms with no derivatives must contribute 
+to the vector shift $\widehat{\beta}_i$. Matching the terms with their respective shifts therefore gives used
+
+\begin{equation}
+\begin{aligned}
+\widehat{\alpha_{i}} &= \frac{\bar{A}^{\frac{1}{2}}}{\mathcal{N}^{\frac{1}{2}}}\alpha_{,i} + \frac{\bar B\,\dot{\bar\phi}\,\delta\phi_{,i}
++\bar C\!\left(\dot{\bar\phi}\,\delta X_{,i}+\dot{\bar X}\,\delta\phi_{,i}\right)
++\bar D\,\dot{\bar X}\,\delta X_{,i}}{\widehat{a}} \\
+\widehat{\beta_{i}} &= \frac{\bar{A}^{\frac{1}{2}}}{\mathcal{N}^{\frac{1}{2}}}\beta_{i}
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+Finally, for the $ij$-components, by using similar (but this time a lot more simpler algebra) steps, we find 
+\begin{equation}
+\begin{aligned}
+\widehat{\psi} & = \psi - \frac{\delta A}{2 \bar{A}},\\
+\widehat{\gamma}_{ij} &= \gamma_{ij}, \\
+\widehat{E} &= E, \\ 
+\widehat{F} &= F
+\end{aligned}
+\label{eq:ijcomp}
+\end{equation} 
+
+Let us now move to a gauge-invariant scalar curvature perturbation which we define as 
+
+\begin{equation}
+\mathcal{R}_c \equiv \psi - \frac{H}{\dot{\bar{\phi}}}\delta \phi
+ \label{eq:label}
+\end{equation}
+
+Here, $H$ is the Hubble parameter defined as $H \equiv \dot{a} / a$. It follows then 
+that the disformally transformed perturbation is given by
+
+\begin{equation}
+\widehat{\mathcal{R}}_c = -\widehat{\psi} - \frac{\widehat{H}}{d\bar{\phi}/d\widehat{t}}\delta \phi
+\label{eq:Rhat}
+\end{equation}
+        
+We know that 
+\begin{equation}
+\widehat{H} = \frac{d \widehat{a}/d\widehat{t}}{\widehat{a}}
+\label{eq:Hhat}
+\end{equation}
+
+Also, by the chain rule, while also taking note that $d\widehat{t}^2 = \mathcal{N} dt^2$ and $\widehat{a} = a \bar{A}^\frac{1}{2}$ we have 
+
+\begin{equation}
+\begin{aligned}
+\frac{d\widehat{a}}{d\widehat{t}} &= \frac{d \widehat{a}}{dt} \frac{dt}{d\widehat{t}} \\ 
+                                  &= \frac{d\widehat{a}}{dt} \mathcal{N}^{-\frac{1}{2}} \\
+                                  &= \left( \dot{a}\bar{A}^{-\frac{1}{2}} + \frac{a \dot{\bar{A}}}{2 \bar{A}^{\frac{1}{2}}} \right) \mathcal{N}^{-\frac{1}{2}}
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+Then \cref{eq:Hhat} becomes 
+
+\begin{equation}
+\begin{aligned}
+\widehat{H} &= \frac{1}{\widehat{a}} \frac{d\widehat{a}}{d\widehat{t}} \\
+            &= \frac{1}{\widehat{a}} \left( \dot{a}\bar{A}^{\frac{1}{2}} + \frac{a \dot{\bar{A}}}{2 \bar{A}^{\frac{1}{2}}} \right) \mathcal{N}^{-\frac{1}{2}} \\ 
+            &= \left( \frac{\dot{a}}{a} + \frac{\dot{\bar{A}}}{2\bar{A}}  \right)\mathcal{N}^{- \frac{1}{2}} \\ 
+            &= \left( H + \frac{\dot{\bar{A}}}{2\bar{A}}  \right)\mathcal{N}^{- \frac{1}{2}}
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+By virtue of \cref{eq:ijcomp}, \cref{eq:Rhat} becomes 
+
+\begin{equation}
+\begin{aligned}
+\widehat{R} &= -\psi + \frac{\delta A}{2\bar{A}} - (H + \frac{\dot{\bar{A}}}{2\bar{A}}) \frac{\delta \phi}{d \bar{\phi} / d \widehat{t}} \mathcal{N}^{-\frac{1}{2}} \\ 
+            &= -\psi + \frac{\delta A}{2\bar{A}} - (H + \frac{\dot{\bar{A}}}{2\bar{A}}) \frac{\delta \phi}{\dot{\bar{\phi}} \mathcal{N}^{\frac{1}{2}}} \mathcal{N}^{-\frac{1}{2}} \\ 
+            &= \underbrace{-\psi - H \frac{\delta \phi}{\dot{\bar{\phi}}}}_{\mathcal{R}_c} + \frac{\delta A}{2 \bar{A}} - \frac{\dot{\bar{A}}}{2 \bar{A}} \frac{\delta \phi}{\dot{\bar{\phi}}}
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+\begin{equation}
+\boxed{
+\widehat{\mathcal{R}_c}  = \mathcal{R}_c + \frac{\delta A}{2 \bar{A}} - \frac{\dot{\bar{A}}}{2 \bar{A}} \frac{\delta \phi}{\dot{\bar{\phi}}}
+}
+\label{eq:Rcalhat}
+\end{equation}
+
+\subsection*{Correction Terms in $\widehat{\mathcal{R}}_c$ }
+We wish to explore the variation of the conformal factor given by $\delta A$. Note that $A$ is a functional of 
+$(\phi, X,Y,Z)$, by the chain rule this spells out as
+
+\begin{equation}
+\frac { \delta A } { \bar { A } } = \frac { \bar { A } _ { , \bar { \phi } } } { \bar { A } } \, \delta \phi + \frac { \bar { A } _ { , \bar { X } } } { \bar { A } } \, \delta X + \frac { \bar { A } _ { , \bar { Y } } } { \bar { A } } \, \delta Y + \frac { \bar { A } _ { , \bar { Z } } } { \bar { A } } \, \delta Z .\label{eq:label}
+\end{equation}
+
+
+Also, the background term $\bar{A}$ is also a functional of $(\bar{\phi}, \bar{X}, \bar{Y}, \bar{Z})$, again by the chain rule 
+
+\begin{equation}
+\frac{\dot{\bar{A}}}{\bar{A}} = \frac{\bar{A}_{,\bar{\phi}}}{\bar{A}} \dot{\bar{\phi}} + \frac{\bar{A}_{,\bar{X}}}{\bar{A}} \dot{\bar{X}}
++  \frac{\bar{A}_{,\bar{Y}}}{\bar{A}} \dot{\bar{Y}} +  \frac{\bar{A}_{,\bar{Z}}}{\bar{A}} \dot{\bar{Z}}
+\label{eq:Abarphibar}
+\end{equation}
+
+Isolating $\bar{A}_{,\bar{\phi}}/ \bar{A}$ 
+
+\begin{equation}
+\frac{\bar{A}_{,\bar{\phi}}}{\bar{A}} = \frac{\dot{\bar{A}}}{\bar{A} \dot{\bar{\phi}}} - 
+\frac{\bar{A}_{,\bar{X}}}{\bar{A} \dot{\bar{\phi}}} \dot{\bar{X}} -  \frac{\bar{A}_{,\bar{Y}}}{\bar{A}\dot{\bar{\phi}}} \dot{\bar{Y}} -  \frac{\bar{A}_{,\bar{Z}}}{\bar{A}\dot{\bar{\phi}}} \dot{\bar{Z}}
+\label{eq:label}
+\end{equation}
+
+On the other hand, we now turn to the variations of $X,Y,Z$. First, for $X$ given by \cref{eq:X-expand}. 
+
+\begin{equation}
+X = \frac{1}{2}\dot{\bar{\phi}}^{2}+\dot{\bar{\phi}}\,\delta\dot{\phi}-\varphi\,\dot{\bar{\phi}}^{2},
+\label{eq:label}
+\end{equation}
+
+Taking the time derivative we have 
+
+\begin{equation}
+\dot{X} = \dot{\bar{\phi}} \ddot{\bar{\phi}} + \ddot{\bar{\phi}} \delta\dot{\phi} + \dot{\bar{\phi}} \delta \ddot{\bar{\phi}}  -\dot{\varphi}\dot{\bar{\phi}}^2 - 2\varphi \dot{\bar{\phi}} \ddot{\bar{\phi}} 
+\label{eq:label}
+\end{equation}
+
+Following $\dot{X} = \dot{\bar{X}} + \delta \dot{X}$, we find that the first term is a pure background term, whereas, the 
+remaining four terms have first order perturbations. Loosely speaking, we "match the perturbations", thereby retrieveing 
+
+\begin{equation}
+\dot{\bar{X}} = \dot{\bar{\phi}} \ddot{\bar{\phi}}, \quad \delta \dot{X} = \ddot{\bar{\phi}} \delta\dot{\phi} + \dot{\bar{\phi}} \delta \ddot{\phi} -\dot{\varphi}\dot{\bar{\phi}}^2 - 2\varphi \dot{\bar{\phi}} \ddot{\bar{\phi}} 
+\label{eq:Xbardot}
+\end{equation}
+
+For $Y$, since $Y =  \nabla ^ { \mu } \phi \nabla _ { \mu } X$ clearly depends on both $\phi$ and $X$, and in unitary gauge, both of 
+these depend only on time, $Y$ must also inherit time dependence. Tracing the steps down up to linear order we have 
+
+\begin{equation}
+\begin{aligned}
+Y &= \nabla ^ { \mu } \phi \nabla _ { \mu } \\ 
+  &= g^{00} \partial_{t} \phi \partial_{t}X \\ 
+  &= -(1-2\varphi)(\dot{ \bar{ \phi}} + \delta \dot{\phi})(\dot{\bar{X}} + \delta \dot{X}) \\
+  &\approx -(\dot{\bar{\phi}} + \delta \dot{\phi} - 2\varphi \dot{\bar{\phi}})(\dot{\bar{X}} + \delta \dot{X}) \\
+  &\approx -\dot{\bar{\phi}}\dot{\bar{X}} + 2\varphi \dot{\bar{\phi}}\dot{\bar{X}} -\dot{\bar{\phi}}\delta \dot{X} - \dot{\bar{X}}\delta \dot{\phi}
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+Using the same logic as $X$, our background perturbation terms are $\bar{Y} = -\dot{\bar{\phi}}\dot{\bar{X}}$
+and $\delta Y = 2\varphi \dot{\bar{\phi}}\dot{\bar{X}} -\dot{\bar{\phi}}\delta \dot{X} - \dot{\bar{X}}\delta \dot{\phi}$. 
+Inserting our results from \cref{eq:Xbardot}, we have 
+
+\begin{equation}
+\begin{aligned}
+Y &= - \dot{\bar{\phi}}^2 \ddot{\bar{\phi}} + 2\varphi \dot{\bar{\phi}}^2 \ddot{\phi} - \dot{\bar{\phi}}\ddot{\bar{\phi}}\delta\dot{\phi} 
+- \dot{\bar{\phi}}^2 \delta \ddot{\phi} + \dot{\varphi} \dot{\bar{\phi}}^3 + 2 \varphi \dot{\bar{\phi}}^2 \ddot{\phi} 
+- \dot{\bar{\phi}}\ddot{\bar{\phi}}\delta\dot{\phi} \\ 
+& = \underbrace{- \dot{\bar{\phi}}^2 \ddot{\bar{\phi}}}_{\bar{Y}} + \underbrace{\bigl ( 4 \dot { \bar { \phi } } ^ { 2 } \ddot { \bar { \phi } } \varphi + \dot { \bar { \phi } } ^ { 3 } \dot { \varphi } - 2 \dot { \bar { \phi } } \ddot { \bar { \phi } } \, \delta \dot { \phi } - \dot { \bar { \phi } } ^ { 2 } \, \delta \ddot { \phi } \bigr )}_{\delta Y}
+\end{aligned}
+\label{eq:Yexpand}
+\end{equation}
+
+It also follows that $Z$ should inherit the time dependence of $X$ and must it must also reduce to partial derivatives 
+in unitary gauge 
+
+\begin{equation}
+\begin{aligned}
+Z &= \nabla^\mu X \nabla_{\mu}X \\ 
+  &= g^{\mu \nu} \nabla_{\nu} X\nabla_{\mu} X \\ 
+  &= g^{00} \partial_{t} X \partial_{t} X \\ 
+  &= -(1-2 \varphi) \dot{X}^2  \\ 
+  &= -(1-2 \varphi) (\dot{\bar{X}} + \delta\dot{X})^2 \\  
+  &= -(1-2 \varphi)\Big( \dot{\bar{X}}^2 + 2 \dot{\bar{X}}\delta\dot{X} + (\delta\dot{X})^2\Big) \\  
+  &\approx -\dot{\bar{X}}^2 - 2\dot{\bar{X}}\delta\dot{X} + 2\varphi\dot{\bar{X}}^2 
+     \;\; \cancelto{\mathcal{O}(2)}{\,-4\varphi \dot{\bar{X}} \delta \dot{X}\,}
+     \;\; \cancelto{\mathcal{O}(2)}{\,-(\delta\dot{X})^2\,} \\[4pt]
+  &\approx - \dot{\bar{\phi}}^2 \ddot{\bar{\phi}}^2
+  - 2\dot{\bar{\phi}}\ddot{\bar{\phi}}
+    \Big(\ddot{\bar{\phi}} \,\delta\dot{\phi}
+        + \dot{\bar{\phi}} \,\delta \ddot{\phi}
+        -\dot{\varphi}\,\dot{\bar{\phi}}^2
+        - 2\varphi \dot{\bar{\phi}} \ddot{\bar{\phi}}\Big)
+  + 2 \varphi \dot{\bar{\phi}}^2 \ddot{\bar{\phi}}^2 \\[4pt]
+  &\approx \underbrace{- \dot { \bar { \phi } } ^ { 2 } \ddot { \bar { \phi } } ^ { 2 }}_{\bar{Z}} 
+  + \underbrace{\Big( 6 \dot { \bar { \phi } } ^ { 2 } \ddot { \bar { \phi } } ^ { 2 } \varphi
+  + 2 \dot { \bar { \phi } } ^ { 3 } \ddot { \bar { \phi } } \dot { \varphi }
+  - 2 \dot { \bar { \phi } } \ddot { \bar { \phi } } ^ { 2 } \, \delta \dot { \phi }
+  - 2 \dot { \bar { \phi } } ^ { 2 } \ddot { \bar { \phi } } \, \delta \ddot { \phi } \Big)}_{\delta Z}\,.
+\end{aligned}
+\label{eq:label}
+\end{equation}
+
+Now that we have the background values of $X, Y, Z$, by easily taking the time-derivatives thereof we have 
+
+\begin{equation}
+\dot{\bar{X}} = \dot{\bar{\phi}}\ddot{\bar{\phi}}, \quad 
+\dot{\bar{Y}} = -2\dot{\bar{\phi}}\ddot{\bar{\phi}}^2 - \dot{\bar{\phi}}^2\dddot{\bar{\phi}}, \quad 
+\dot{\bar{Z}} = -2\dot{\bar{\phi}} \ddot{\bar{\phi}}^3 - 2\dot{\bar{\phi}}^2 \ddot{\bar{\phi}}\dddot{\bar{\phi}}
+\label{eq:label}
+\end{equation}
+
+Consequently, \cref{eq:Abarphibar} takes the form 
+\begin{equation}
+\begin{aligned}
+\frac{\bar{A}_{,\bar{\phi}}}{\bar{A}} &= \frac{\dot{\bar{A}}}{\bar{A} \dot{\bar{\phi}}} - 
+\frac{\bar{A}_{,\bar{X}}}{\bar{A} \dot{\bar{\phi}}} \dot{\bar{X}} -  \frac{\bar{A}_{,\bar{Y}}}{\bar{A}\dot{\bar{\phi}}} \dot{\bar{Y}} -  \frac{\bar{A}_{,\bar{Z}}}{\bar{A}\dot{\bar{\phi}}} \dot{\bar{Z}} \\ 
+&= \frac{\dot{\bar{A}}}{\bar{A} \dot{\bar{\phi}}} 
+- \frac{\bar{A}_{,\bar{X}}}{\bar{A} \dot{\bar{\phi}}} \dot{\bar{\phi}}\ddot{\bar{\phi}}
+- \frac{\bar{A}_{,\bar{Y}}}{\bar{A}\dot{\bar{\phi}}} \left( -2\dot{\bar{\phi}}\ddot{\bar{\phi}}^2 - \dot{\bar{\phi}}^2\dddot{\bar{\phi}} \right)
+- \frac{\bar{A}_{,\bar{Z}}}{\bar{A}\dot{\bar{\phi}}} \left( -2\dot{\bar{\phi}} \ddot{\bar{\phi}}^3 - 2\dot{\bar{\phi}}^2 \ddot{\bar{\phi}}\dddot{\bar{\phi}} \right) \\ 
+&= \frac{\dot{\bar{A}}}{\bar{A} \dot{\bar{\phi}}} 
+- \frac{\bar{A}_{,\bar{X}}}{\bar{A}}\ddot{\bar{\phi}}
++ \frac{\bar{A}_{,\bar{Y}}}{\bar{A}} \left(2\ddot{\bar{\phi}}^2 + \dot{\bar{\phi}}\dddot{\bar{\phi}} \right)
++ 2\frac{\bar{A}_{,\bar{Z}}}{\bar{A}} \ddot{\bar{\phi}}\left( \ddot{\bar{\phi}}^2 + \dot{\bar{\phi}}\dddot{\bar{\phi}} \right) \\ 
+\end{aligned}
+\label{eq:label}
+\end{equation}  
+
+
+\bibliographystyle{JHEP}
+\bibliography{cosmological-perturbations}
 
 
 \end{document}

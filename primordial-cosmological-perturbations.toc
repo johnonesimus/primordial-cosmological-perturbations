@@ -1,22 +1,26 @@
 \contentsline {section}{\numberline {1}Read Me First}{1}{section.1}%
-\contentsline {section}{\numberline {2}Overview and thoughts}{2}{section.2}%
-\contentsline {subsection}{\numberline {2.1}Overture}{4}{subsection.2.1}%
+\contentsline {section}{\numberline {2}Overview and thoughts}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Overture}{3}{subsection.2.1}%
 \contentsline {section}{\numberline {3}The Expanding Universe}{4}{section.3}%
-\contentsline {section}{\numberline {4}Mathematical Preliminaries}{5}{section.4}%
-\contentsline {subsection}{\numberline {4.1}The Riemann Curvature Tensor and its Contractions}{5}{subsection.4.1}%
-\contentsline {section}{\numberline {5}History and Properties of the Universe}{6}{section.5}%
-\contentsline {subsection}{\numberline {5.1}What the Cosmic Microwave Background Tells us}{6}{subsection.5.1}%
+\contentsline {section}{\numberline {4}Mathematical Preliminaries}{4}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Riemann Curvature Tensor and its Contractions}{4}{subsection.4.1}%
+\contentsline {section}{\numberline {5}History and Properties of the Universe}{5}{section.5}%
+\contentsline {subsection}{\numberline {5.1}What the Cosmic Microwave Background Tells us}{5}{subsection.5.1}%
 \contentsline {section}{\numberline {6}How a Flat, Homogenous, and Isotropic Universe Evolves: The FLRW Metric}{6}{section.6}%
-\contentsline {subsection}{\numberline {6.1}An Example in using the FLRW Metric}{7}{subsection.6.1}%
-\contentsline {section}{\numberline {7}The Matter and Energy of a Homogenous and Isotropic Universe}{8}{section.7}%
+\contentsline {subsection}{\numberline {6.1}An Example in using the FLRW Metric}{6}{subsection.6.1}%
+\contentsline {section}{\numberline {7}The Matter and Energy of a Homogenous and Isotropic Universe}{7}{section.7}%
 \contentsline {section}{\numberline {8}Cosmological Perturbations}{8}{section.8}%
-\contentsline {section}{\numberline {9}Disformal Transformation}{9}{section.9}%
-\contentsline {subsection}{\numberline {9.1}Perturbing the FLRW Metric}{9}{subsection.9.1}%
-\contentsline {subsection}{\numberline {9.2}For the $dt^2$ terms}{11}{subsection.9.2}%
-\contentsline {subsection}{\numberline {9.3}For $dt dx^i$ terms}{11}{subsection.9.3}%
-\contentsline {subsection}{\numberline {9.4}For $dx^i dx^j$ terms}{12}{subsection.9.4}%
-\contentsline {section}{\numberline {10}Disformal Transformation}{12}{section.10}%
-\contentsline {section}{\numberline {11}Geodesics, Cosmological Redshift, Horizons, and Comoving Coordinates}{14}{section.11}%
-\contentsline {subsection}{\numberline {11.1}Geodesics}{15}{subsection.11.1}%
-\contentsline {section}{\numberline {A}Appendix}{15}{appendix.A}%
-\contentsline {paragraph}{Note added.}{15}{section*.10}%
+\contentsline {section}{\numberline {9}The TMM Transformation}{8}{section.9}%
+\contentsline {section}{\numberline {10}Expanding $d\hat {s}^2$ term-by-term}{9}{section.10}%
+\contentsline {section}{\numberline {11}Background-perturbation split}{9}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Linear Expression for $X$ }{10}{subsection.11.1}%
+\contentsline {section}{\numberline {12}Linear Expansion of the Transformed Metric}{10}{section.12}%
+\contentsline {subsection}{\numberline {12.1}The $dt^2$ terms}{10}{subsection.12.1}%
+\contentsline {section}{\numberline {13}For the $dt dx^i$ terms}{11}{section.13}%
+\contentsline {subsection}{\numberline {13.1}For $dx^i dx^j$ terms}{12}{subsection.13.1}%
+\contentsline {section}{\numberline {14}Finally $d\hat {s}^2$ }{12}{section.14}%
+\contentsline {section}{\numberline {15}Disformal Transformation}{17}{section.15}%
+\contentsline {section}{\numberline {16}Geodesics, Cosmological Redshift, Horizons, and Comoving Coordinates}{19}{section.16}%
+\contentsline {subsection}{\numberline {16.1}Geodesics}{20}{subsection.16.1}%
+\contentsline {section}{\numberline {A}Appendix}{20}{appendix.A}%
+\contentsline {paragraph}{Note added.}{20}{section*.20}%
